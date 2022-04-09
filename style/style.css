@@ -1,0 +1,1497 @@
+* {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+}
+
+a:link,
+a:visited,
+a:active a:hover {
+  text-decoration: none;
+  color: #aa6cbc;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("../IMG/Montserrat-Italic-VariableFont_wght.ttf");
+}
+
+.navMenu {
+  grid-area: nav;
+}
+
+#nav {
+  background-color: #a8dce3;
+  width: 100%;
+  height: 70px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu {
+  display: inline-block;
+  text-align: right;
+  padding-right: 100px;
+}
+.nav_circle {
+  position: absolute;
+  top: -7rem;
+  left: -7rem;
+  background-color: #a8dce3;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+}
+.listaDeMenu {
+  display: inline-block;
+  color: #aa6cbc;
+  padding: 2rem;
+  font-size: 3.5rem;
+  text-decoration: none;
+}
+
+.logoWeb {
+  position: absolute;
+  top: 8rem;
+  left: 8rem;
+  width: 8.6rem;
+}
+
+.carritoDeCompra {
+  width: 5rem;
+  height: 5rem;
+  padding-right: 10rem;
+}
+
+.textoInicioPrincipal {
+  grid-area: textoInicioPrincipal;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+}
+
+.textoInicioDetalle {
+  background-color: #fb95be;
+  width: 1rem;
+  height: 135px;
+  border-radius: 50px 50px 50px 50px;
+  margin-left: 14rem;
+}
+
+.paddigTextoDeInicio {
+  margin-left: 2rem;
+}
+
+.textoInicio {
+  font-size: 5rem;
+  color: #aa6cbc;
+}
+
+.imagenInicio {
+  position: relative;
+  overflow: hidden;
+  grid-area: imagenInicio;
+}
+
+.textoInicioCircle {
+  position: absolute;
+  background-color: #fb95be;
+  top: 200px;
+  left: 200px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.textoInicioCircle2 {
+  position: absolute;
+  background-color: #fb95be;
+  top: -0px;
+  right: -80px;
+  width: 1000px;
+  height: 1000px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.imagenInicio2 {
+  float: right;
+}
+
+.pieDePagina {
+  width: 100%;
+  padding: 2rem 0;
+  background-color: #a8dce3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: pieDePagina;
+}
+
+.grupoFooter {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.box figure img {
+  width: 100px;
+}
+
+.textoFooter {
+  color: #aa6cbc;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.textoFooter2 {
+  color: #aa6cbc;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+.redSocial img {
+  width: 20rem;
+}
+
+.pieDePagina2 {
+  color: #aa6cbc;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.circleConta {
+  position: relative;
+  grid-area: circleConta;
+}
+
+.divCicleContactos {
+  position: absolute;
+  background-color: #fb95be;
+  width: 5rem;
+  height: 5rem;
+  right: -77rem;
+  bottom: 10rem;
+  border-radius: 50%;
+}
+
+.formularioDeContacto {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 12rem;
+  grid-area: formularioDeContacto;
+}
+
+.mapa {
+  height: 50rem;
+}
+
+iframe {
+  width: 200%;
+  height: 50rem;
+}
+
+.textoFormulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contendorMensaje {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textoAEditarNA {
+  background: rgba(248, 248, 248, 0.616);
+  border-style: none;
+  font-size: 2rem;
+  margin: 1rem;
+  padding: 0.9rem;
+  border-radius: 25px 25px 25px 25px;
+  box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
+}
+
+.textoAEditarC {
+  background: rgba(248, 248, 248, 0.616);
+  border-style: none;
+  font-size: 2rem;
+  margin: 1rem;
+  padding: 0.8rem;
+  width: 190%;
+  border-radius: 25px 25px 25px 25px;
+  box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
+}
+
+.textoAEditarM {
+  background: rgba(248, 248, 248, 0.616);
+  border-style: none;
+  font-size: 2rem;
+  margin: 1rem;
+  padding: 0.8rem;
+  width: 190%;
+  height: 25rem;
+  border-radius: 25px 25px 25px 25px;
+  box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
+}
+
+.botonDeEnviar {
+  color: #7f8181;
+  background: rgba(248, 248, 248, 0.616);
+  font-size: 2rem;
+  width: 35%;
+  height: 4rem;
+  padding: 0.8rem;
+  border-style: none;
+  border-radius: 25px 25px 25px 25px;
+  box-shadow: 2px 2px 2px 1px rgb(205, 212, 212);
+}
+
+.circleConta2 {
+  position: relative;
+}
+
+.divcCircleContactos2 {
+  position: absolute;
+  background-color: #fb95be;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  top: -40rem;
+  left: 5rem;
+  z-index: -1;
+}
+
+.divcCircleContactos3 {
+  position: absolute;
+  background-color: #fb95be;
+  width: 8rem;
+  height: 8rem;
+  top: -55rem;
+  left: 15rem;
+  border-radius: 50%;
+}
+
+.circlePink {
+  position: relative;
+}
+.circlePinkIzquierda {
+  position: absolute;
+  width: 16rem;
+  height: 16rem;
+  background-color: #fb95be;
+  right: -185rem;
+  top: -1rem;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.contenedorNosotros {
+  grid-area: contenedorNosotros;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 12rem 15rem 4rem;
+}
+
+.contenedorNosotros2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15rem;
+}
+
+.titleNosotros {
+  font-size: 3rem;
+  color: #aa6cbc;
+}
+
+.textoNosotros {
+  font-size: 1.5rem;
+  color: #aa6cbc;
+}
+
+.card {
+  margin: 3rem;
+  padding: 6rem;
+  border-radius: 15px;
+  box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
+}
+
+.card2 {
+  max-width: 70rem;
+  padding: 6rem;
+  border-radius: 25px;
+  box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
+}
+
+.grupoImagen {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 3rem;
+  grid-area: grupoImagen;
+}
+
+.edicionImagenes {
+  margin: 2rem;
+  padding: 2rem;
+  font-size: 2.5rem;
+  border-radius: 15px;
+  color: #aa6cbc;
+  box-shadow: 2px 2px 2px 2px rgb(205, 212, 212);
+}
+
+.imagenesNovedades {
+  position: relative;
+  grid-area: imagenesNovedades;
+}
+
+.imagenesNovedades1 {
+  position: absolute;
+  border-radius: 25px 25px 25px 25px;
+  box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
+  bottom: 32rem;
+  left: 2rem;
+}
+
+.imagenesNovedades2 {
+  position: absolute;
+  border-radius: 25px 25px 25px 25px;
+  box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
+  bottom: 6rem;
+  left: 29rem;
+}
+.imagenesNovedades3 {
+  position: absolute;
+  border-radius: 25px 25px 25px 25px;
+  box-shadow: 3px 3px 3px rgb(205, 212, 212);
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.grupoNovedades {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 7rem 45rem 1rem 45rem;
+  text-align: justify;
+  grid-area: grupoNovedades;
+}
+
+.textoNovedades {
+  color: #aa6cbc;
+  font-size: 5rem;
+  padding: 2rem;
+  text-align: justify;
+}
+
+.textoNovedades1 {
+  color: #aa6cbc;
+  font-size: 3.5rem;
+  padding: 2rem;
+}
+
+.subtituloProductos {
+  margin-bottom: 1rem;
+}
+
+.precio {
+  margin-bottom: 1rem;
+}
+
+.gridConterdorNosotros {
+  grid-area: gridConterdorNosotros;
+}
+
+.gridConterdorNosotros2 {
+  grid-area: gridConterdorNosotros2;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 0.1fr 1fr 0.2fr;
+  grid-template-areas:
+    "nav nav nav"
+    "textoInicioPrincipal textoInicioPrincipal textoInicioPrincipal "
+    "imagenInicio imagenInicio imagenInicio"
+    "pieDePagina pieDePagina pieDePagina";
+}
+
+.gridNosotros {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 0.1fr 1fr 0.2fr;
+  grid-template-areas:
+    "nav nav nav"
+    "gridConterdorNosotros gridConterdorNosotros gridConterdorNosotros "
+    "gridConterdorNosotros2 gridConterdorNosotros2 gridConterdorNosotros2"
+    "pieDePagina pieDePagina pieDePagina";
+}
+
+.gridConta {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 4fr 0.1fr;
+  grid-template-areas:
+    "nav nav nav"
+    "formularioDeContacto formularioDeContacto formularioDeContacto "
+    "pieDePagina pieDePagina pieDePagina";
+}
+
+.gridInsumos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1fr 0.2fr;
+  grid-template-areas:
+    "nav nav nav"
+    "grupoImagen grupoImagen grupoImagen"
+    "pieDePagina pieDePagina pieDePagina";
+}
+
+.gridNovedades {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1.9fr 1fr 0.7fr;
+  grid-template-areas:
+    "nav nav nav"
+    "grupoNovedades grupoNovedades grupoNovedades"
+    "imagenesNovedades imagenesNovedades imagenesNovedades"
+    "pieDePagina pieDePagina pieDePagina";
+}
+
+@media screen and (max-width: 500px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 0.1fr 1fr 0.1fr;
+    grid-template-areas:
+      "nav nav nav"
+      "textoInicioPrincipal textoInicioPrincipal textoInicioPrincipal "
+      "imagenInicio imagenInicio imagenInicio"
+      "pieDePagina pieDePagina pieDePagina";
+  }
+
+  a:link,
+  a:visited,
+  a:active a:hover {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  #nav {
+    background-color: #a8dce3;
+    width: 100%;
+    height: 18rem;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    margin-right: -11rem;
+    z-index: 100;
+  }
+
+  .carritoDeCompra {
+    width: 5rem;
+    height: 5rem;
+    padding-left: 1rem;
+    padding-right: 3rem;
+  }
+
+  .listaDeMenu {
+    background-color: #8cbdc4;
+    display: inline-block;
+    padding: 0.2rem 0.9rem;
+    color: #aa6cbc;
+    font-size: 2.3rem;
+    text-align: justify;
+    text-decoration: none;
+    border-radius: 50px 50px 50px 50px;
+    width: 23rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .logoWeb {
+    position: absolute;
+    top: 8rem;
+    left: 8rem;
+    width: 8.6rem;
+  }
+
+  .textoInicioPrincipal {
+    grid-area: textoInicioPrincipal;
+    height: 11rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .textoInicioDetalle {
+    background-color: #fb95be;
+    width: 1rem;
+    height: 7rem;
+    border-radius: 50px 50px 50px 50px;
+    -webkit-border-radius: 50px 50px 50px 50px;
+    -moz-border-radius: 50px 50px 50px 50px;
+    -ms-border-radius: 50px 50px 50px 50px;
+    -o-border-radius: 50px 50px 50px 50px;
+  }
+
+  .paddigTextoDeInicio {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  .textoInicio {
+    font-size: 2rem;
+    color: #aa6cbc;
+  }
+
+  .imagenInicio {
+    position: relative;
+    grid-area: imagenInicio;
+    height: 50rem;
+  }
+
+  .textoInicioCircle {
+    position: absolute;
+    background-color: #fb95be;
+    top: -0rem;
+    left: 25rem;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+  }
+
+  .textoInicioCircle2 {
+    position: absolute;
+    background-color: #fb95be;
+    top: 14rem;
+    right: -15rem;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    z-index: -1;
+  }
+
+  .imagenInicio2 {
+    position: absolute;
+    bottom: -1rem;
+    right: -20rem;
+  }
+
+  .imagenInicio2 img {
+    width: 85%;
+  }
+
+  .pieDePagina {
+    width: 100%;
+    background-color: #a8dce3;
+    grid-area: pieDePagina;
+  }
+
+  .grupoFooter {
+    width: 100%;
+    max-width: 120rem;
+    margin: auto;
+  }
+
+  .box {
+    padding: 0.3rem;
+  }
+
+  .box figure img {
+    width: 8rem;
+  }
+
+  .textoFooter {
+    color: #aa6cbc;
+    margin-bottom: 25px;
+    font-size: 1.7rem;
+  }
+
+  .textoFooter2 {
+    color: #aa6cbc;
+    margin: 0 auto;
+    font-size: 1rem;
+  }
+
+  .redSocial img {
+    width: 9rem;
+  }
+
+  .pieDePagina2 {
+    color: #aa6cbc;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 1rem;
+  }
+
+  .gridNosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 55% 25% 25%;
+    grid-template-areas:
+      "nav nav nav"
+      "gridConterdorNosotros gridConterdorNosotros gridConterdorNosotros "
+      "gridConterdorNosotros2 gridConterdorNosotros2 gridConterdorNosotros2"
+      "pieDePagina pieDePagina pieDePagina";
+  }
+
+  .contenedorNosotros {
+    grid-area: gridConterdorNosotros;
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0rem 0rem;
+    height: 90%;
+  }
+
+  .contenedorNosotros2 {
+    grid-area: gridConterdorNosotros2;
+    grid-template-areas: none;
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0rem;
+    height: 5%;
+  }
+
+  .titleNosotros {
+    font-size: 1.5rem;
+    color: #aa6cbc;
+  }
+
+  .textoNosotros {
+    font-size: 1rem;
+    color: #aa6cbc;
+  }
+
+  .card {
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
+  }
+
+  .card2 {
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
+  }
+
+  .divcCircleContactos2 {
+    position: absolute;
+    background-color: #fb95be;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    top: -30rem;
+    left: 1rem;
+    z-index: -1;
+  }
+
+  .divcCircleContactos3 {
+    position: absolute;
+    background-color: #fb95be;
+    width: 5rem;
+    height: 5rem;
+    top: -48rem;
+    left: 36rem;
+    border-radius: 50%;
+    z-index: -1;
+  }
+
+  .gridConta {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr 0.2fr;
+    grid-template-areas:
+      "nav nav nav"
+      "formularioDeContacto formularioDeContacto formularioDeContacto "
+      "pieDePagina pieDePagina pieDePagina";
+  }
+
+  .formularioDeContacto {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    grid-area: formularioDeContacto;
+  }
+
+  .mapa {
+    margin-top: 1rem;
+    height: 20rem;
+    width: 20rem;
+    margin-bottom: 2rem;
+  }
+
+  iframe {
+    height: 100%;
+    width: 100%;
+  }
+
+  .textoFormulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contendorMensaje {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .textoAEditarNA {
+    background: rgba(248, 248, 248, 0.616);
+    border-style: none;
+    font-size: 2rem;
+    margin: 1rem;
+    padding: 0.9rem;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
+  }
+
+  .textoAEditarC {
+    background: rgba(248, 248, 248, 0.616);
+    border-style: none;
+    font-size: 2rem;
+    margin: 1rem;
+    padding: 0.8rem;
+    width: 90%;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
+  }
+
+  .textoAEditarM {
+    background: rgba(248, 248, 248, 0.616);
+    border-style: none;
+    font-size: 2rem;
+    margin: 1rem;
+    padding: 0.8rem;
+    width: 90%;
+    height: 25rem;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
+  }
+
+  .botonDeEnviar {
+    color: #7f8181;
+    background: rgba(248, 248, 248, 0.616);
+    font-size: 2rem;
+    width: 35%;
+    margin-bottom: 2rem;
+    height: 4rem;
+    padding: 0.8rem;
+    border-style: none;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 2px 2px 2px 1px rgb(205, 212, 212);
+  }
+
+  .gridInsumos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 3fr 0.2fr;
+    grid-template-areas:
+      "nav nav nav"
+      "grupoImagen grupoImagen grupoImagen"
+      "pieDePagina pieDePagina pieDePagina";
+  }
+
+  .grupoImagen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: grupoImagen;
+  }
+
+  .edicionImagenes {
+    margin: 3rem 1rem;
+    padding: 2rem;
+    font-size: 2.5rem;
+    border-radius: 15px;
+    color: #aa6cbc;
+    box-shadow: 2px 2px 2px 2px rgb(205, 212, 212);
+  }
+
+  .edicionImagenes img {
+    width: 50%;
+  }
+
+  .gridNovedades {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 0.1fr 1fr 0.1fr;
+    grid-template-areas:
+      "nav nav nav"
+      "grupoNovedades grupoNovedades grupoNovedades"
+      "imagenesNovedades imagenesNovedades imagenesNovedades"
+      "pieDePagina pieDePagina pieDePagina";
+  }
+
+  .imagenesNovedades {
+    position: relative;
+    grid-area: imagenesNovedades;
+  }
+
+  .imagenesNovedades1 {
+    position: absolute;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
+    bottom: 32rem;
+    left: 2rem;
+  }
+
+  .imagenesNovedades2 {
+    position: absolute;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
+    bottom: 6rem;
+    left: 29rem;
+  }
+  .imagenesNovedades3 {
+    position: absolute;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 3px 3px 3px rgb(205, 212, 212);
+    bottom: 1rem;
+    right: 1rem;
+  }
+
+  .grupoNovedades {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 7rem 45rem 1rem 45rem;
+    text-align: justify;
+    grid-area: grupoNovedades;
+  }
+
+  .textoNovedades {
+    color: #aa6cbc;
+    font-size: 5rem;
+    padding: 2rem;
+    text-align: justify;
+  }
+
+  .textoNovedades1 {
+    color: #aa6cbc;
+    font-size: 3.5rem;
+    padding: 2rem;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 768px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 0.1fr 1fr 0.1fr;
+    grid-template-areas:
+      "nav nav nav"
+      "textoInicioPrincipal textoInicioPrincipal textoInicioPrincipal "
+      "imagenInicio imagenInicio imagenInicio"
+      "pieDePagina pieDePagina pieDePagina";
+  }
+
+  #nav {
+    background-color: #a8dce3;
+    width: 100%;
+    height: 70px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .menu {
+    display: inline-block;
+    text-align: left;
+    padding: 0 0 0 12rem;
+    z-index: 100;
+  }
+
+  .listaDeMenu {
+    display: inline-block;
+    color: #aa6cbc;
+    padding: 1rem;
+    font-size: 2.5rem;
+    text-decoration: none;
+  }
+
+  .logoWeb {
+    position: absolute;
+    top: 8rem;
+    left: 8rem;
+    width: 8.6rem;
+  }
+
+  .carritoDeCompra {
+    width: 5rem;
+    height: 5rem;
+    padding: 3rem 1rem 2rem;
+  }
+
+  .textoInicioDetalle {
+    background-color: #fb95be;
+    width: 1rem;
+    height: 10rem;
+    border-radius: 50px 50px 50px 50px;
+    margin-left: 25rem;
+  }
+
+  .paddigTextoDeInicio {
+    margin-left: 1rem;
+  }
+
+  .textoInicio {
+    font-size: 3.5rem;
+    color: #aa6cbc;
+  }
+
+  .imagenInicio {
+    position: relative;
+    overflow: hidden;
+    grid-area: imagenInicio;
+  }
+
+  .imagenInicio {
+    position: relative;
+    grid-area: imagenInicio;
+    height: 54rem;
+  }
+
+  .textoInicioCircle {
+    position: absolute;
+    background-color: #fb95be;
+    top: -0rem;
+    left: 2rem;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+  }
+
+  .textoInicioCircle2 {
+    position: absolute;
+    background-color: #fb95be;
+    top: 1rem;
+    right: -19rem;
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    z-index: -1;
+  }
+
+  .imagenInicio2 {
+    position: absolute;
+    bottom: -1rem;
+    right: -35rem;
+  }
+
+  .imagenInicio2 img {
+    width: 85%;
+  }
+
+  .gridNosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 55% 25% 25%;
+    grid-template-areas:
+      "nav nav nav"
+      "gridConterdorNosotros gridConterdorNosotros gridConterdorNosotros "
+      "gridConterdorNosotros2 gridConterdorNosotros2 gridConterdorNosotros2"
+      "pieDePagina pieDePagina pieDePagina";
+  }
+
+  .contenedorNosotros {
+    grid-area: gridConterdorNosotros;
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0rem 0rem;
+    height: 75%;
+  }
+
+  .contenedorNosotros2 {
+    grid-area: gridConterdorNosotros2;
+    grid-template-areas: none;
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0rem;
+    height: 1%;
+  }
+
+  .titleNosotros {
+    font-size: 2rem;
+    color: #aa6cbc;
+  }
+
+  .textoNosotros {
+    font-size: 1.5rem;
+    color: #aa6cbc;
+  }
+
+  .card {
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
+  }
+
+  .card2 {
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
+  }
+
+  .divcCircleContactos2 {
+    position: absolute;
+    background-color: #fb95be;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    top: -30rem;
+    left: 1rem;
+    z-index: -1;
+  }
+
+  .divcCircleContactos3 {
+    position: absolute;
+    background-color: #fb95be;
+    width: 5rem;
+    height: 5rem;
+    top: -48rem;
+    left: 36rem;
+    border-radius: 50%;
+    z-index: -1;
+  }
+
+  .gridConta {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr 0.2fr;
+    grid-template-areas:
+      "nav nav nav"
+      "formularioDeContacto formularioDeContacto formularioDeContacto "
+      "pieDePagina pieDePagina pieDePagina";
+  }
+
+  .formularioDeContacto {
+    height: 56rem;
+    display: flex;
+    flex-direction: center;
+    justify-content: space-around;
+    grid-area: formularioDeContacto;
+  }
+
+  .mapa {
+    margin-top: 1rem;
+    height: 30rem;
+    width: 150rem;
+    margin-bottom: 2rem;
+  }
+
+  iframe {
+    height: 90%;
+    width: 90%;
+  }
+
+  .textoFormulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contendorMensaje {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .textoAEditarNA {
+    background: rgba(248, 248, 248, 0.616);
+    border-style: none;
+    font-size: 2rem;
+    margin: 1rem;
+    padding: 0.9rem;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
+  }
+
+  .textoAEditarC {
+    background: rgba(248, 248, 248, 0.616);
+    border-style: none;
+    font-size: 2rem;
+    margin: 1rem;
+    padding: 0.8rem;
+    width: 90%;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
+  }
+
+  .textoAEditarM {
+    background: rgba(248, 248, 248, 0.616);
+    border-style: none;
+    font-size: 2rem;
+    margin: 1rem;
+    padding: 0.8rem;
+    width: 90%;
+    height: 25rem;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
+  }
+
+  .botonDeEnviar {
+    color: #7f8181;
+    background: rgba(248, 248, 248, 0.616);
+    font-size: 2rem;
+    width: 35%;
+    margin-bottom: 2rem;
+    height: 4rem;
+    padding: 0.8rem;
+    border-style: none;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 2px 2px 2px 1px rgb(205, 212, 212);
+  }
+
+  .gridInsumos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 2fr 0.2fr;
+    grid-template-areas:
+      "nav nav nav"
+      "grupoImagen grupoImagen grupoImagen"
+      "pieDePagina pieDePagina pieDePagina";
+  }
+
+  .grupoImagen {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    grid-area: grupoImagen;
+    width: 94%;
+  }
+
+  .edicionImagenes {
+    margin: 3rem 1rem;
+    padding: 2rem;
+    font-size: 2.5rem;
+    border-radius: 15px;
+    color: #aa6cbc;
+    box-shadow: 2px 2px 2px 2px rgb(205, 212, 212);
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 0.1fr 1fr 0.1fr;
+    grid-template-areas:
+      "nav nav nav"
+      "textoInicioPrincipal textoInicioPrincipal textoInicioPrincipal "
+      "imagenInicio imagenInicio imagenInicio"
+      "pieDePagina pieDePagina pieDePagina";
+  }
+
+  #nav {
+    background-color: #a8dce3;
+    width: 100%;
+    height: 70px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .menu {
+    display: inline-block;
+    text-align: left;
+    padding: 0 0 0 12rem;
+    z-index: 100;
+  }
+
+  .listaDeMenu {
+    display: inline-block;
+    color: #aa6cbc;
+    padding: 1rem;
+    font-size: rem;
+    text-decoration: none;
+  }
+
+  .logoWeb {
+    position: absolute;
+    top: 8rem;
+    left: 8rem;
+    width: 9rem;
+  }
+
+  .carritoDeCompra {
+    width: 5rem;
+    height: 5rem;
+    padding: 3rem 1rem 2rem;
+  }
+
+  .textoInicioDetalle {
+    background-color: #fb95be;
+    width: 1rem;
+    height: 10rem;
+    border-radius: 50px 50px 50px 50px;
+    margin-left: 5rem;
+  }
+
+  .paddigTextoDeInicio {
+    margin-left: 1rem;
+  }
+
+  .textoInicio {
+    font-size: 4rem;
+    color: #aa6cbc;
+  }
+
+  .imagenInicio {
+    position: relative;
+    overflow: hidden;
+    grid-area: imagenInicio;
+  }
+
+  .imagenInicio {
+    position: relative;
+    grid-area: imagenInicio;
+    height: 54rem;
+  }
+
+  .textoInicioCircle {
+    position: absolute;
+    background-color: #fb95be;
+    top: -0rem;
+    left: 2rem;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+  }
+
+  .textoInicioCircle2 {
+    position: absolute;
+    background-color: #fb95be;
+    top: -0.01rem;
+    right: -28rem;
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    z-index: -1;
+  }
+
+  .imagenInicio2 {
+    position: absolute;
+    bottom: -1rem;
+    right: -35rem;
+  }
+
+  .imagenInicio2 img {
+    width: 85%;
+  }
+
+  .gridNosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 55% 25% 32%;
+    grid-template-areas:
+      "nav nav nav"
+      "gridConterdorNosotros gridConterdorNosotros gridConterdorNosotros "
+      "gridConterdorNosotros2 gridConterdorNosotros2 gridConterdorNosotros2"
+      "pieDePagina pieDePagina pieDePagina";
+  }
+
+  .contenedorNosotros {
+    grid-area: gridConterdorNosotros;
+    display: flex;
+    flex-direction: column;
+    margin: 4rem 11rem;
+    height: 75%;
+  }
+
+  .contenedorNosotros2 {
+    grid-area: gridConterdorNosotros2;
+    display: flex;
+    flex-direction: center;
+    margin: 2rem 11rem;
+    height: 75%;
+  }
+
+  .titleNosotros {
+    font-size: 2rem;
+    color: #aa6cbc;
+  }
+
+  .textoNosotros {
+    font-size: 1.5rem;
+    color: #aa6cbc;
+  }
+
+  .card {
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
+  }
+
+  .card2 {
+    margin: 1rem;
+    padding: 1rem;
+    max-width: 178%;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
+  }
+
+  .divcCircleContactos2 {
+    position: absolute;
+    background-color: #fb95be;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    top: -58rem;
+    left: 1rem;
+    z-index: -1;
+  }
+
+  .divcCircleContactos3 {
+    position: absolute;
+    background-color: #fb95be;
+    width: 5rem;
+    height: 5rem;
+    top: -48rem;
+    left: 36rem;
+    border-radius: 50%;
+    z-index: -1;
+  }
+
+  .gridConta {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr 0.2fr;
+    grid-template-areas:
+      "nav nav nav"
+      "formularioDeContacto formularioDeContacto formularioDeContacto "
+      "pieDePagina pieDePagina pieDePagina";
+  }
+
+  .formularioDeContacto {
+    height: 56rem;
+    display: flex;
+    flex-direction: center;
+    justify-content: space-around;
+    grid-area: formularioDeContacto;
+  }
+
+  .mapa {
+    margin-top: 1rem;
+    height: 35rem;
+    width: 85rem;
+    margin-bottom: 2rem;
+  }
+
+  iframe {
+    height: 90%;
+    width: 90%;
+  }
+
+  .textoFormulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contendorMensaje {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .textoAEditarNA {
+    background: rgba(248, 248, 248, 0.616);
+    border-style: none;
+    font-size: 2rem;
+    width: 35rem;
+    margin: 1rem;
+    padding: 0.9rem;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
+  }
+
+  .textoAEditarC {
+    background: rgba(248, 248, 248, 0.616);
+    border-style: none;
+    font-size: 2rem;
+    width: 35rem;
+    margin: 1rem;
+    padding: 0.8rem;
+    width: 126%;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
+  }
+
+  .textoAEditarM {
+    background: rgba(248, 248, 248, 0.616);
+    border-style: none;
+    font-size: 2rem;
+    margin: 1rem;
+    padding: 0.8rem;
+    width: 126%;
+    height: 25rem;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
+  }
+
+  .botonDeEnviar {
+    color: #7f8181;
+    background: rgba(248, 248, 248, 0.616);
+    font-size: 2rem;
+    width: 35%;
+    margin-bottom: 2rem;
+    height: 5rem;
+    padding: 0.8rem;
+    border-style: none;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 2px 2px 2px 1px rgb(205, 212, 212);
+  }
+
+  .gridInsumos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 2fr 0.2fr;
+    grid-template-areas:
+      "nav nav nav"
+      "grupoImagen grupoImagen grupoImagen"
+      "pieDePagina pieDePagina pieDePagina";
+  }
+
+  .grupoImagen {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    grid-area: grupoImagen;
+    width: 96%;
+  }
+
+  .edicionImagenes {
+    margin: 3rem 1rem;
+    padding: 2rem;
+    font-size: 2.5rem;
+    border-radius: 15px;
+    color: #aa6cbc;
+    box-shadow: 2px 2px 2px 2px rgb(205, 212, 212);
+  }
+}
