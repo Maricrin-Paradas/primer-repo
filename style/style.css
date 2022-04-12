@@ -7,7 +7,7 @@
 
 a:link,
 a:visited,
-a:active a:hover {
+a:active {
   text-decoration: none;
   color: #aa6cbc;
 }
@@ -51,6 +51,13 @@ a:active a:hover {
   padding: 2rem;
   font-size: 3.5rem;
   text-decoration: none;
+  transition-duration: 0.4s;
+}
+
+.listaDeMenu:hover {
+  color: #fff;
+  border-radius: 5rem 5rem 5rem 5rem;
+  border: 0.5rem solid;
 }
 
 .logoWeb {
@@ -96,19 +103,37 @@ a:active a:hover {
   grid-area: imagenInicio;
 }
 
+@keyframes circuloRosaIndex {
+  0% {
+    width: 10rem;
+  }
+  25% {
+    width: 30rem;
+    height: 30rem;
+  }
+  50% {
+    width: 20rem;
+  }
+}
+
 .textoInicioCircle {
   position: absolute;
-  background-color: #fb95be;
+  background-image: radial-gradient(#fb95be, #d918bf);
   top: 200px;
   left: 200px;
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  animation-name: circuloRosaIndex;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 5s;
+  animation-delay: 1s;
 }
 
 .textoInicioCircle2 {
   position: absolute;
-  background-color: #fb95be;
+  background-image: radial-gradient(#fb95be, #d918bf);
   top: -0px;
   right: -80px;
   width: 1000px;
@@ -166,21 +191,6 @@ a:active a:hover {
   text-align: center;
 }
 
-.circleConta {
-  position: relative;
-  grid-area: circleConta;
-}
-
-.divCicleContactos {
-  position: absolute;
-  background-color: #fb95be;
-  width: 5rem;
-  height: 5rem;
-  right: -77rem;
-  bottom: 10rem;
-  border-radius: 50%;
-}
-
 .formularioDeContacto {
   height: 100%;
   display: flex;
@@ -200,99 +210,140 @@ iframe {
 }
 
 .textoFormulario {
+  width: 25%;
+}
+
+.cajaDeFormularios {
+  position: relative;
+  margin-bottom: 5rem;
+  width: 100%;
+  height: 1rem;
+  border-bottom: 1px solid white;
+}
+
+.inputNombre {
+  font-size: 2rem;
+  padding: 1.5rem;
+  border: none;
+  outline: none;
+  border-bottom: solid 0.1rem #aa6cbc;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+input:focus {
+  padding-bottom: 1rem;
+}
+
+.inputApellido {
+  font-size: 2rem;
+  padding: 1.5rem;
+  border: none;
+  outline: none;
+  border-bottom: solid 0.1rem #aa6cbc;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+.inputCorreo {
+  font-size: 2rem;
+  padding: 1.5rem;
+  border: none;
+  outline: none;
+  border-bottom: solid 0.1rem #aa6cbc;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+.textoMensaje {
+  width: 100%;
+  height: 15rem;
+  font-size: 2rem;
+  padding: 1.5rem;
+  border: none;
+  outline: none;
+  border-bottom: solid 0.1rem #aa6cbc;
+  transition: all 0.2s ease;
+}
+
+.cajaBotonEnviar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.contendorMensaje {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.textoAEditarNA {
-  background: rgba(248, 248, 248, 0.616);
-  border-style: none;
-  font-size: 2rem;
-  margin: 1rem;
-  padding: 0.9rem;
-  border-radius: 25px 25px 25px 25px;
-  box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
-}
-
-.textoAEditarC {
-  background: rgba(248, 248, 248, 0.616);
-  border-style: none;
-  font-size: 2rem;
-  margin: 1rem;
-  padding: 0.8rem;
-  width: 190%;
-  border-radius: 25px 25px 25px 25px;
-  box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
-}
-
-.textoAEditarM {
-  background: rgba(248, 248, 248, 0.616);
-  border-style: none;
-  font-size: 2rem;
-  margin: 1rem;
-  padding: 0.8rem;
-  width: 190%;
-  height: 25rem;
-  border-radius: 25px 25px 25px 25px;
-  box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
+  justify-content: center;
+  height: 5rem;
+  margin-top: 20rem;
 }
 
 .botonDeEnviar {
-  color: #7f8181;
-  background: rgba(248, 248, 248, 0.616);
+  width: 25%;
   font-size: 2rem;
-  width: 35%;
-  height: 4rem;
-  padding: 0.8rem;
-  border-style: none;
-  border-radius: 25px 25px 25px 25px;
-  box-shadow: 2px 2px 2px 1px rgb(205, 212, 212);
+  background-color: #fff;
+  color: #aa6cbc;
+  border: 0.1rem solid #aa6cbc;
+  outline: none;
+  transition-duration: 0.4s;
 }
 
+.botonDeEnviar:hover {
+  background-color: #aa6cbc;
+  color: white;
+}
 .circleConta2 {
   position: relative;
 }
 
-.divcCircleContactos2 {
+@keyframes circuloRosaNovedadesPeque {
+  0% {
+    width: 10rem;
+  }
+  25% {
+    width: 10rem;
+    height: 10rem;
+  }
+  50% {
+    width: 10rem;
+  }
+}
+
+.divCircleContactos2 {
   position: absolute;
-  background-color: #fb95be;
+  background-image: radial-gradient(#fb95be, #d918bf);
   width: 20rem;
   height: 20rem;
   border-radius: 50%;
   top: -40rem;
   left: 5rem;
   z-index: -1;
+  animation-name: circuloRosaNovedadesPeque;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-duration: 5s;
+  animation-delay: 1s;
 }
 
-.divcCircleContactos3 {
+@keyframes circuloRosaNovedades {
+  0% {
+    width: 10rem;
+  }
+  25% {
+    width: 30rem;
+    height: 30rem;
+  }
+  50% {
+    width: 20rem;
+  }
+}
+
+.divCircleContactos3 {
   position: absolute;
-  background-color: #fb95be;
+  background-image: radial-gradient(#fb95be, #d918bf);
   width: 8rem;
   height: 8rem;
   top: -55rem;
   left: 15rem;
   border-radius: 50%;
-}
-
-.circlePink {
-  position: relative;
-}
-.circlePinkIzquierda {
-  position: absolute;
-  width: 16rem;
-  height: 16rem;
-  background-color: #fb95be;
-  right: -185rem;
-  top: -1rem;
-  border-radius: 50%;
-  z-index: -1;
+  animation-name: circuloRosaNovedades;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-duration: 5s;
+  animation-delay: 1s;
 }
 
 .contenedorNosotros {
@@ -347,6 +398,12 @@ iframe {
   border-radius: 15px;
   color: #aa6cbc;
   box-shadow: 2px 2px 2px 2px rgb(205, 212, 212);
+  transition: all 0.2s ease-out;
+}
+.edicionImagenes:hover {
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+  box-shadow: 1rem 1rem 1rem 1rem rgba(0, 0, 0, 0.11),
+    1rem 2rem 2rem;
 }
 
 .imagenesNovedades {
@@ -835,7 +892,7 @@ iframe {
   .gridNovedades {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 0.1fr 1fr 0.1fr;
+    grid-template-rows: 0.2fr 1fr 0.2fr 0.5fr;
     grid-template-areas:
       "nav nav nav"
       "grupoNovedades grupoNovedades grupoNovedades"
@@ -852,45 +909,49 @@ iframe {
     position: absolute;
     border-radius: 25px 25px 25px 25px;
     box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
-    bottom: 32rem;
+    bottom: 75rem;
     left: 2rem;
+    width: 27%;
   }
 
   .imagenesNovedades2 {
     position: absolute;
     border-radius: 25px 25px 25px 25px;
     box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
-    bottom: 6rem;
-    left: 29rem;
+    bottom: 75rem;
+    left: 21rem;
+    width: 46%;
   }
   .imagenesNovedades3 {
     position: absolute;
     border-radius: 25px 25px 25px 25px;
     box-shadow: 3px 3px 3px rgb(205, 212, 212);
-    bottom: 1rem;
+    bottom: 11rem;
     right: 1rem;
+    width: 92%;
   }
 
   .grupoNovedades {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    margin: 7rem 45rem 1rem 45rem;
+    margin: 1rem;
     text-align: justify;
     grid-area: grupoNovedades;
   }
 
   .textoNovedades {
     color: #aa6cbc;
-    font-size: 5rem;
-    padding: 2rem;
+    font-size: 4rem;
+    padding: 1rem;
     text-align: justify;
   }
 
   .textoNovedades1 {
     color: #aa6cbc;
-    font-size: 3.5rem;
-    padding: 2rem;
+    font-size: 3rem;
+    padding: 1rem;
+    margin-bottom: 20rem;
   }
 }
 
@@ -1493,5 +1554,64 @@ iframe {
     border-radius: 15px;
     color: #aa6cbc;
     box-shadow: 2px 2px 2px 2px rgb(205, 212, 212);
+  }
+
+  .gridNovedades {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1.9fr 0.5fr 0.7fr;
+    grid-template-areas:
+      "nav nav nav"
+      "grupoNovedades grupoNovedades grupoNovedades"
+      "imagenesNovedades imagenesNovedades imagenesNovedades"
+      "pieDePagina pieDePagina pieDePagina";
+  }
+
+  .imagenesNovedades1 {
+    position: absolute;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
+    bottom: 27rem;
+    left: 1rem;
+    width: 20%;
+  }
+
+  .imagenesNovedades2 {
+    position: absolute;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
+    bottom: 3rem;
+    left: 1rem;
+    width: 20%;
+  }
+  .imagenesNovedades3 {
+    position: absolute;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 3px 3px 3px rgb(205, 212, 212);
+    bottom: 1rem;
+    right: 1rem;
+    width: 30%;
+  }
+
+  .grupoNovedades {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 1rem 1rem 1rem 23rem;
+    text-align: justify;
+    grid-area: grupoNovedades;
+  }
+
+  .textoNovedades {
+    color: #aa6cbc;
+    font-size: 5rem;
+    padding: 2rem;
+    text-align: justify;
+  }
+
+  .textoNovedades1 {
+    color: #aa6cbc;
+    font-size: 3.5rem;
+    padding: 2rem;
   }
 }
