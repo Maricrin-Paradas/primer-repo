@@ -202,70 +202,89 @@ iframe {
   height: 50rem;
 }
 
-.textoFormulario {
+.textoFormulario{
+  width: 25%;
+}
+
+.cajaDeFormularios {
+  position: relative;
+  margin-bottom: 5rem;
+  width: 100%;
+  height: 1rem;
+  border-bottom: 1px solid white;
+}
+
+.inputNombre {
+  font-size: 2rem;
+  padding: 1.5rem;
+  border: none;
+  outline: none;
+  border-bottom: solid 0.1rem #aa6cbc;
+  transition: all 0.2s ease;
+  width:100%
+}
+
+input:focus {
+  padding-bottom: 1rem;
+}
+
+.inputApellido {
+  font-size: 2rem;
+  padding: 1.5rem;
+  border: none;
+  outline: none;
+  border-bottom: solid 0.1rem #aa6cbc;
+  transition: all 0.2s ease;
+  width:100%
+}
+.inputCorreo {
+  font-size: 2rem;
+  padding: 1.5rem;
+  border: none;
+  outline: none;
+  border-bottom: solid 0.1rem #aa6cbc;
+  transition: all 0.2s ease;
+  width:100%
+}
+.textoMensaje {
+  width: 100%;
+  height: 15rem;
+  font-size: 2rem;
+  padding: 1.5rem;
+  border: none;
+  outline: none;
+  border-bottom: solid 0.1rem #aa6cbc;
+  transition: all 0.2s ease;
+}
+
+.cajaBotonEnviar{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  height: 5rem;
+  margin-top: 20rem;
 }
 
-.contendorMensaje {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.botonDeEnviar{
+  width: 25%;
+  font-size:2rem;
+  background-color: #fff;
+  color: #aa6cbc;
+  border: 0.1rem solid #aa6cbc;
+  outline: none;
+  transition-duration: 0.4s;
 }
 
-.textoAEditarNA {
-  background: rgba(248, 248, 248, 0.616);
-  border-style: none;
-  font-size: 2rem;
-  margin: 1rem;
-  padding: 0.9rem;
-  border-radius: 25px 25px 25px 25px;
-  box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
+.botonDeEnviar:hover {
+background-color: #aa6cbc;
+color: white;
 }
-
-.textoAEditarC {
-  background: rgba(248, 248, 248, 0.616);
-  border-style: none;
-  font-size: 2rem;
-  margin: 1rem;
-  padding: 0.8rem;
-  width: 190%;
-  border-radius: 25px 25px 25px 25px;
-  box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
-}
-
-.textoAEditarM {
-  background: rgba(248, 248, 248, 0.616);
-  border-style: none;
-  font-size: 2rem;
-  margin: 1rem;
-  padding: 0.8rem;
-  width: 190%;
-  height: 25rem;
-  border-radius: 25px 25px 25px 25px;
-  box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
-}
-
-.botonDeEnviar {
-  color: #7f8181;
-  background: rgba(248, 248, 248, 0.616);
-  font-size: 2rem;
-  width: 35%;
-  height: 4rem;
-  padding: 0.8rem;
-  border-style: none;
-  border-radius: 25px 25px 25px 25px;
-  box-shadow: 2px 2px 2px 1px rgb(205, 212, 212);
-}
-
 .circleConta2 {
   position: relative;
 }
 
 @keyframes circuloRosaNovedadesPeque {
   0% {
-    width: 5rem;
+    width: 10rem;
   }
   25% {
     width: 10rem;
@@ -288,7 +307,7 @@ iframe {
   animation-name: circuloRosaNovedadesPeque;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  animation-duration: 8s;
+  animation-duration: 5s;
   animation-delay: 1s;
 }
 
@@ -316,7 +335,7 @@ iframe {
   animation-name: circuloRosaNovedades;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  animation-duration: 8s;
+  animation-duration: 5s;
   animation-delay: 1s;
 }
 
