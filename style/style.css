@@ -17,53 +17,50 @@ a:active a:hover {
   src: url("../IMG/Montserrat-Italic-VariableFont_wght.ttf");
 }
 
+.logoWeb {
+  width: 10rem;
+  margin-right: 40rem;
+}
+
+.button {
+font-size: 4rem;
+}
+
+.iconos{
+  width:45%;
+  height: 5rem;
+}
+
+ul{
+  background-color: #a8dce3;
+}
 .navMenu {
   grid-area: nav;
 }
 
-#nav {
+.navbar {
   background-color: #a8dce3;
-  width: 100%;
-  height: 70px;
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
 }
 
-.menu {
-  display: inline-block;
-  text-align: right;
-  padding-right: 100px;
-}
-.nav_circle {
-  position: absolute;
-  top: -7rem;
-  left: -7rem;
-  background-color: #a8dce3;
-  width: 20rem;
-  height: 20rem;
-  border-radius: 50%;
-}
-.listaDeMenu {
-  display: inline-block;
-  color: #aa6cbc;
-  padding: 2rem;
-  font-size: 4rem;
-  text-decoration: none;
+.contenedorNavbar{
+  height: 12rem;
 }
 
-.logoWeb {
-  position: absolute;
-  top: 8rem;
-  left: 8rem;
-  width: 8.6rem;
+.nav-link {
+  font-size: 3rem;
+  margin: 3.5rem;
+  display: inline-flex;
+}
+
+.contenedorConta{
+  height: 100vh;
 }
 
 .carritoDeCompra {
-  width: 5rem;
-  height: 5rem;
-  padding-right: 10rem;
+  width: 8rem;
+  height: 7rem;
+  margin: 2rem 4rem;
+
 }
 
 .textoInicioPrincipal {
@@ -122,6 +119,10 @@ a:active a:hover {
   animation-timing-function: ease-in;
   animation-duration: 5s;
   animation-delay: 1s;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 .textoInicioCircle2 {
@@ -184,16 +185,8 @@ a:active a:hover {
   text-align: center;
 }
 
-.formularioDeContacto {
-  height: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0 12rem;
-  grid-area: formularioDeContacto;
-}
-
 .mapa {
+  width:100%;
   height: 50rem;
 }
 
@@ -208,7 +201,7 @@ iframe {
 
 .cajaDeFormularios {
   position: relative;
-  margin-bottom: 5rem;
+  margin-bottom: 6rem;
   width: 100%;
   height: 1rem;
   border-bottom: 1px solid white;
@@ -487,16 +480,6 @@ input:focus {
     "pieDePagina pieDePagina pieDePagina";
 }
 
-.gridConta {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.2fr 4fr 0.1fr;
-  grid-template-areas:
-    "nav nav nav"
-    "formularioDeContacto formularioDeContacto formularioDeContacto "
-    "pieDePagina pieDePagina pieDePagina";
-}
-
 .gridInsumos {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -554,33 +537,6 @@ input:focus {
     text-align: left;
     margin-right: -11rem;
     z-index: 100;
-  }
-
-  .carritoDeCompra {
-    width: 5rem;
-    height: 5rem;
-    padding-left: 1rem;
-    padding-right: 3rem;
-  }
-
-  .listaDeMenu {
-    background-color: #8cbdc4;
-    display: inline-block;
-    padding: 0.2rem 0.9rem;
-    color: #aa6cbc;
-    font-size: 2.3rem;
-    text-align: justify;
-    text-decoration: none;
-    border-radius: 50px 50px 50px 50px;
-    width: 23rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .logoWeb {
-    position: absolute;
-    top: 8rem;
-    left: 8rem;
-    width: 8.6rem;
   }
 
   .textoInicioPrincipal {
@@ -765,93 +721,6 @@ input:focus {
     z-index: -1;
   }
 
-  .gridConta {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 1fr 0.2fr;
-    grid-template-areas:
-      "nav nav nav"
-      "formularioDeContacto formularioDeContacto formularioDeContacto "
-      "pieDePagina pieDePagina pieDePagina";
-  }
-
-  .formularioDeContacto {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    grid-area: formularioDeContacto;
-  }
-
-  .mapa {
-    margin-top: 1rem;
-    height: 20rem;
-    width: 20rem;
-    margin-bottom: 2rem;
-  }
-
-  iframe {
-    height: 100%;
-    width: 100%;
-  }
-
-  .textoFormulario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .contendorMensaje {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .textoAEditarNA {
-    background: rgba(248, 248, 248, 0.616);
-    border-style: none;
-    font-size: 2rem;
-    margin: 1rem;
-    padding: 0.9rem;
-    border-radius: 25px 25px 25px 25px;
-    box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
-  }
-
-  .textoAEditarC {
-    background: rgba(248, 248, 248, 0.616);
-    border-style: none;
-    font-size: 2rem;
-    margin: 1rem;
-    padding: 0.8rem;
-    width: 90%;
-    border-radius: 25px 25px 25px 25px;
-    box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
-  }
-
-  .textoAEditarM {
-    background: rgba(248, 248, 248, 0.616);
-    border-style: none;
-    font-size: 2rem;
-    margin: 1rem;
-    padding: 0.8rem;
-    width: 90%;
-    height: 25rem;
-    border-radius: 25px 25px 25px 25px;
-    box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
-  }
-
-  .botonDeEnviar {
-    color: #7f8181;
-    background: rgba(248, 248, 248, 0.616);
-    font-size: 2rem;
-    width: 35%;
-    margin-bottom: 2rem;
-    height: 4rem;
-    padding: 0.8rem;
-    border-style: none;
-    border-radius: 25px 25px 25px 25px;
-    box-shadow: 2px 2px 2px 1px rgb(205, 212, 212);
-  }
-
   .gridInsumos {
     display: grid;
     grid-template-columns: 1fr;
@@ -983,13 +852,6 @@ input:focus {
     padding: 1rem;
     font-size: 2.5rem;
     text-decoration: none;
-  }
-
-  .logoWeb {
-    position: absolute;
-    top: 8rem;
-    left: 8rem;
-    width: 8.6rem;
   }
 
   .carritoDeCompra {
@@ -1130,94 +992,6 @@ input:focus {
     left: 36rem;
     border-radius: 50%;
     z-index: -1;
-  }
-
-  .gridConta {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 1fr 0.2fr;
-    grid-template-areas:
-      "nav nav nav"
-      "formularioDeContacto formularioDeContacto formularioDeContacto "
-      "pieDePagina pieDePagina pieDePagina";
-  }
-
-  .formularioDeContacto {
-    height: 56rem;
-    display: flex;
-    flex-direction: center;
-    justify-content: space-around;
-    grid-area: formularioDeContacto;
-  }
-
-  .mapa {
-    margin-top: 1rem;
-    height: 30rem;
-    width: 150rem;
-    margin-bottom: 2rem;
-  }
-
-  iframe {
-    height: 90%;
-    width: 90%;
-  }
-
-  .textoFormulario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .contendorMensaje {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .textoAEditarNA {
-    background: rgba(248, 248, 248, 0.616);
-    border-style: none;
-    font-size: 2rem;
-    margin: 1rem;
-    padding: 0.9rem;
-    border-radius: 25px 25px 25px 25px;
-    box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
-  }
-
-  .textoAEditarC {
-    background: rgba(248, 248, 248, 0.616);
-    border-style: none;
-    font-size: 2rem;
-    margin: 1rem;
-    padding: 0.8rem;
-    width: 90%;
-    border-radius: 25px 25px 25px 25px;
-    box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
-  }
-
-  .textoAEditarM {
-    background: rgba(248, 248, 248, 0.616);
-    border-style: none;
-    font-size: 2rem;
-    margin: 1rem;
-    padding: 0.8rem;
-    width: 90%;
-    height: 25rem;
-    border-radius: 25px 25px 25px 25px;
-    box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
-  }
-
-  .botonDeEnviar {
-    color: #7f8181;
-    background: rgba(248, 248, 248, 0.616);
-    font-size: 2rem;
-    width: 35%;
-    margin-bottom: 2rem;
-    height: 4rem;
-    padding: 0.8rem;
-    border-style: none;
-    border-radius: 25px 25px 25px 25px;
-    box-shadow: 2px 2px 2px 1px rgb(205, 212, 212);
   }
 
   .gridInsumos {
