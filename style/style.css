@@ -461,7 +461,7 @@ input:focus {
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto 0.1fr 1fr auto;
+  grid-template-rows: 0.2fr 0.1fr 1fr 0.2fr;
   min-height: 100vh;
   grid-template-areas:
     "nav nav nav"
