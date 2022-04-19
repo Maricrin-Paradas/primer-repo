@@ -135,8 +135,11 @@ z-index: -1;
 
 .imagenInicio2 {
   float: right;
+  position: relative;
 }
-
+.alto {
+  height: 100vh;
+}
 .pieDePagina {
   width: 100%;
   padding: 2rem 0;
@@ -458,7 +461,8 @@ input:focus {
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.2fr 0.1fr 1fr 0.2fr;
+  grid-template-rows: auto 0.1fr 1fr auto;
+  min-height: 100vh;
   grid-template-areas:
     "nav nav nav"
     "textoInicioPrincipal textoInicioPrincipal textoInicioPrincipal "
@@ -470,6 +474,7 @@ input:focus {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 0.2fr 0.1fr 1fr 0.2fr;
+  min-height: 100vh;
   grid-template-areas:
     "nav nav nav"
     "gridConterdorNosotros gridConterdorNosotros gridConterdorNosotros "
@@ -481,6 +486,7 @@ input:focus {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 0.2fr 1fr 0.2fr;
+  min-height: 100vh;
   grid-template-areas:
     "nav nav nav"
     "grupoImagen grupoImagen grupoImagen"
@@ -491,6 +497,7 @@ input:focus {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 0.5fr 1.9fr 1fr 0.7fr;
+  min-height: 100vh;
   grid-template-areas:
     "nav nav nav"
     "grupoNovedades grupoNovedades grupoNovedades"
