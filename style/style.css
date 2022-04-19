@@ -119,10 +119,7 @@ ul{
   animation-timing-function: ease-in;
   animation-duration: 5s;
   animation-delay: 1s;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+z-index: -1;
 }
 
 .textoInicioCircle2 {
@@ -165,13 +162,13 @@ ul{
 .textoFooter {
   color: #aa6cbc;
   margin-bottom: 30px;
-  font-size: 20px;
+  font-size: 3rem;
 }
 
 .textoFooter2 {
   color: #aa6cbc;
   margin-bottom: 5px;
-  font-size: 15px;
+  font-size: 2rem;
 }
 
 .redSocial img {
