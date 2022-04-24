@@ -16,7 +16,6 @@ a:active a:hover {
   font-family: Montserrat;
   src: url("../IMG/Montserrat-Italic-VariableFont_wght.ttf");
 }
-
 .logoWeb {
   width: 10rem;
   margin-right: 40rem;
@@ -34,6 +33,7 @@ a:active a:hover {
 ul {
   background-color: #a8dce3;
 }
+
 .navMenu {
   grid-area: nav;
 }
@@ -108,7 +108,6 @@ ul {
     width: 20rem;
   }
 }
-
 .textoInicioCircle {
   position: absolute;
   background-image: radial-gradient(#fb95be, #d918bf);
@@ -128,7 +127,7 @@ ul {
 .textoInicioCircle2 {
   position: absolute;
   background-image: radial-gradient(#fb95be, #d918bf);
-  top: -0px;
+  top: 0px;
   right: -80px;
   width: 1000px;
   height: 1000px;
@@ -140,9 +139,11 @@ ul {
   float: right;
   position: relative;
 }
+
 .alto {
   height: 100vh;
 }
+
 .pieDePagina {
   width: 100%;
   padding: 2rem 0;
@@ -233,6 +234,7 @@ input:focus {
   transition: all 0.2s ease;
   width: 100%;
 }
+
 .inputCorreo {
   font-size: 2rem;
   padding: 1.5rem;
@@ -242,6 +244,7 @@ input:focus {
   transition: all 0.2s ease;
   width: 100%;
 }
+
 .textoMensaje {
   width: 100%;
   height: 15rem;
@@ -274,6 +277,7 @@ input:focus {
   background-color: #aa6cbc;
   color: white;
 }
+
 .circleConta2 {
   position: relative;
 }
@@ -290,7 +294,6 @@ input:focus {
     width: 10rem;
   }
 }
-
 .divCircleContactos2 {
   position: absolute;
   background-image: radial-gradient(#fb95be, #d918bf);
@@ -319,7 +322,6 @@ input:focus {
     width: 20rem;
   }
 }
-
 .divCircleContactos3 {
   position: absolute;
   background-image: radial-gradient(#fb95be, #d918bf);
@@ -390,6 +392,7 @@ input:focus {
   box-shadow: 2px 2px 2px 2px rgb(205, 212, 212);
   transition: all 0.2s ease-out;
 }
+
 .edicionImagenes:hover {
   transform: translateY(-5px) scale(1.005) translateZ(0);
   box-shadow: 1rem 1rem 1rem 1rem rgba(0, 0, 0, 0.11), 1rem 2rem 2rem;
@@ -438,11 +441,7 @@ input:focus {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 0.2fr 0.1fr 1fr 0.2fr;
   min-height: 100vh;
-  grid-template-areas:
-    "nav nav nav"
-    "textoInicioPrincipal textoInicioPrincipal textoInicioPrincipal "
-    "imagenInicio imagenInicio imagenInicio"
-    "pieDePagina pieDePagina pieDePagina";
+  grid-template-areas: "nav nav nav" "textoInicioPrincipal textoInicioPrincipal textoInicioPrincipal " "imagenInicio imagenInicio imagenInicio" "pieDePagina pieDePagina pieDePagina";
 }
 
 .gridNosotros {
@@ -450,11 +449,7 @@ input:focus {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 0.2fr 0.1fr 1fr 0.2fr;
   min-height: 100vh;
-  grid-template-areas:
-    "nav nav nav"
-    "gridConterdorNosotros gridConterdorNosotros gridConterdorNosotros "
-    "gridConterdorNosotros2 gridConterdorNosotros2 gridConterdorNosotros2"
-    "pieDePagina pieDePagina pieDePagina";
+  grid-template-areas: "nav nav nav" "gridConterdorNosotros gridConterdorNosotros gridConterdorNosotros " "gridConterdorNosotros2 gridConterdorNosotros2 gridConterdorNosotros2" "pieDePagina pieDePagina pieDePagina";
 }
 
 .gridInsumos {
@@ -462,10 +457,7 @@ input:focus {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 0.2fr 1fr 0.2fr;
   min-height: 100vh;
-  grid-template-areas:
-    "nav nav nav"
-    "grupoImagen grupoImagen grupoImagen"
-    "pieDePagina pieDePagina pieDePagina";
+  grid-template-areas: "nav nav nav" "grupoImagen grupoImagen grupoImagen" "pieDePagina pieDePagina pieDePagina";
 }
 
 @media screen and (max-width: 500px) {
@@ -474,16 +466,12 @@ input:focus {
     grid-template-columns: 1fr;
     grid-template-rows: 0.2fr 0.1fr 1fr 0.1fr;
     min-height: 100vh;
-    grid-template-areas:
-      "nav nav nav"
-      "textoInicioPrincipal textoInicioPrincipal textoInicioPrincipal "
-      "imagenInicio imagenInicio imagenInicio"
-      "pieDePagina pieDePagina pieDePagina";
+    grid-template-areas: "nav nav nav" "textoInicioPrincipal textoInicioPrincipal textoInicioPrincipal " "imagenInicio imagenInicio imagenInicio" "pieDePagina pieDePagina pieDePagina";
   }
 
   a:link,
-  a:visited,
-  a:active a:hover {
+a:visited,
+a:active a:hover {
     text-decoration: none;
     color: #ffffff;
   }
@@ -544,7 +532,7 @@ input:focus {
   .textoInicioCircle {
     position: absolute;
     background-color: #fb95be;
-    top: -0rem;
+    top: 0rem;
     left: 25rem;
     width: 12rem;
     height: 12rem;
@@ -620,11 +608,7 @@ input:focus {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 10% 55% 25% 25%;
-    grid-template-areas:
-      "nav nav nav"
-      "gridConterdorNosotros gridConterdorNosotros gridConterdorNosotros "
-      "gridConterdorNosotros2 gridConterdorNosotros2 gridConterdorNosotros2"
-      "pieDePagina pieDePagina pieDePagina";
+    grid-template-areas: "nav nav nav" "gridConterdorNosotros gridConterdorNosotros gridConterdorNosotros " "gridConterdorNosotros2 gridConterdorNosotros2 gridConterdorNosotros2" "pieDePagina pieDePagina pieDePagina";
   }
 
   .contenedorNosotros {
@@ -694,10 +678,7 @@ input:focus {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.1fr 3fr 0.2fr;
-    grid-template-areas:
-      "nav nav nav"
-      "grupoImagen grupoImagen grupoImagen"
-      "pieDePagina pieDePagina pieDePagina";
+    grid-template-areas: "nav nav nav" "grupoImagen grupoImagen grupoImagen" "pieDePagina pieDePagina pieDePagina";
   }
 
   .grupoImagen {
@@ -720,17 +701,12 @@ input:focus {
     width: 50%;
   }
 }
-
 @media screen and (min-width: 501px) and (max-width: 768px) {
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.2fr 0.1fr 1fr 0.1fr;
-    grid-template-areas:
-      "nav nav nav"
-      "textoInicioPrincipal textoInicioPrincipal textoInicioPrincipal "
-      "imagenInicio imagenInicio imagenInicio"
-      "pieDePagina pieDePagina pieDePagina";
+    grid-template-areas: "nav nav nav" "textoInicioPrincipal textoInicioPrincipal textoInicioPrincipal " "imagenInicio imagenInicio imagenInicio" "pieDePagina pieDePagina pieDePagina";
   }
 
   #nav {
@@ -796,7 +772,7 @@ input:focus {
   .textoInicioCircle {
     position: absolute;
     background-color: #fb95be;
-    top: -0rem;
+    top: 0rem;
     left: 2rem;
     width: 12rem;
     height: 12rem;
@@ -828,11 +804,7 @@ input:focus {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 10% 55% 25% 25%;
-    grid-template-areas:
-      "nav nav nav"
-      "gridConterdorNosotros gridConterdorNosotros gridConterdorNosotros "
-      "gridConterdorNosotros2 gridConterdorNosotros2 gridConterdorNosotros2"
-      "pieDePagina pieDePagina pieDePagina";
+    grid-template-areas: "nav nav nav" "gridConterdorNosotros gridConterdorNosotros gridConterdorNosotros " "gridConterdorNosotros2 gridConterdorNosotros2 gridConterdorNosotros2" "pieDePagina pieDePagina pieDePagina";
   }
 
   .contenedorNosotros {
@@ -902,10 +874,7 @@ input:focus {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.1fr 2fr 0.2fr;
-    grid-template-areas:
-      "nav nav nav"
-      "grupoImagen grupoImagen grupoImagen"
-      "pieDePagina pieDePagina pieDePagina";
+    grid-template-areas: "nav nav nav" "grupoImagen grupoImagen grupoImagen" "pieDePagina pieDePagina pieDePagina";
   }
 
   .grupoImagen {
@@ -925,3 +894,5 @@ input:focus {
     box-shadow: 2px 2px 2px 2px rgb(205, 212, 212);
   }
 }
+
+/*# sourceMappingURL=style.css.map */
