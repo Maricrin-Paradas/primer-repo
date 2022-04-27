@@ -1,3 +1,7 @@
+@import "grillas";
+@import "color";
+
+
 * {
   font-size: 62.5%;
   margin: 0;
@@ -9,7 +13,7 @@ a:link,
 a:visited,
 a:active a:hover {
   text-decoration: none;
-  color: #aa6cbc;
+  color: $color-texto;
 }
 
 @font-face {
@@ -32,14 +36,14 @@ a:active a:hover {
 }
 
 ul {
-  background-color: #a8dce3;
+  background-color: $color-container;
 }
 .navMenu {
   grid-area: nav;
 }
 
 .navbar {
-  background-color: #a8dce3;
+  background-color: $color-container;
 }
 
 .contenedorNavbar {
@@ -74,7 +78,7 @@ ul {
 }
 
 .textoInicioDetalle {
-  background-color: #fb95be;
+  background-color: $color-detalles;
   width: 1rem;
   height: 135px;
   border-radius: 50px 50px 50px 50px;
@@ -87,7 +91,7 @@ ul {
 
 .textoInicio {
   font-size: 5rem;
-  color: #aa6cbc;
+  color: $color-texto;
 }
 
 .imagenInicio {
@@ -111,7 +115,7 @@ ul {
 
 .textoInicioCircle {
   position: absolute;
-  background-image: radial-gradient(#fb95be, #d918bf);
+  background-image: radial-gradient($color-circulos);
   top: 200px;
   left: 200px;
   width: 200px;
@@ -123,17 +127,19 @@ ul {
   animation-duration: 5s;
   animation-delay: 1s;
   z-index: -1;
+
 }
 
 .textoInicioCircle2 {
   position: absolute;
-  background-image: radial-gradient(#fb95be, #d918bf);
+  background-image: radial-gradient($color-circulos);
   top: -0px;
   right: -80px;
   width: 1000px;
   height: 1000px;
   border-radius: 50%;
   z-index: -1;
+
 }
 
 .imagenInicio2 {
@@ -146,7 +152,7 @@ ul {
 .pieDePagina {
   width: 100%;
   padding: 2rem 0;
-  background-color: #a8dce3;
+  background-color: $color-container;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -166,13 +172,13 @@ ul {
 }
 
 .textoFooter {
-  color: #aa6cbc;
+  color: $color-texto;
   margin-bottom: 30px;
   font-size: 3rem;
 }
 
 .textoFooter2 {
-  color: #aa6cbc;
+  color: $color-texto;
   margin-bottom: 5px;
   font-size: 2rem;
 }
@@ -182,7 +188,7 @@ ul {
 }
 
 .pieDePagina2 {
-  color: #aa6cbc;
+  color: $color-texto;
   margin-bottom: 1rem;
   font-size: 2rem;
   text-align: center;
@@ -215,9 +221,13 @@ iframe {
   padding: 1.5rem;
   border: none;
   outline: none;
-  border-bottom: solid 0.1rem #aa6cbc;
+  border-bottom: solid 0.1rem $color-especial;
   transition: all 0.2s ease;
   width: 100%;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
 }
 
 input:focus {
@@ -229,7 +239,7 @@ input:focus {
   padding: 1.5rem;
   border: none;
   outline: none;
-  border-bottom: solid 0.1rem #aa6cbc;
+  border-bottom: solid 0.1rem $color-especial;
   transition: all 0.2s ease;
   width: 100%;
 }
@@ -238,7 +248,7 @@ input:focus {
   padding: 1.5rem;
   border: none;
   outline: none;
-  border-bottom: solid 0.1rem #aa6cbc;
+  border-bottom: solid 0.1rem $color-especial;
   transition: all 0.2s ease;
   width: 100%;
 }
@@ -249,7 +259,7 @@ input:focus {
   padding: 1.5rem;
   border: none;
   outline: none;
-  border-bottom: solid 0.1rem #aa6cbc;
+  border-bottom: solid 0.1rem $color-especial;
   transition: all 0.2s ease;
 }
 
@@ -264,14 +274,14 @@ input:focus {
   width: 25%;
   font-size: 2rem;
   background-color: #fff;
-  color: #aa6cbc;
-  border: 0.1rem solid #aa6cbc;
+  color: $color-especial;
+  border: 0.1rem solid $color-especial;
   outline: none;
   transition-duration: 0.4s;
 }
 
 .botonDeEnviar:hover {
-  background-color: #aa6cbc;
+  background-color: $color-especial;
   color: white;
 }
 .circleConta2 {
@@ -293,7 +303,7 @@ input:focus {
 
 .divCircleContactos2 {
   position: absolute;
-  background-image: radial-gradient(#fb95be, #d918bf);
+  background-image: radial-gradient($color-circulos);
   width: 20rem;
   height: 20rem;
   border-radius: 50%;
@@ -322,7 +332,7 @@ input:focus {
 
 .divCircleContactos3 {
   position: absolute;
-  background-image: radial-gradient(#fb95be, #d918bf);
+  background-image: radial-gradient($color-circulos);
   width: 8rem;
   height: 8rem;
   top: -55rem;
@@ -351,12 +361,12 @@ input:focus {
 
 .titleNosotros {
   font-size: 3rem;
-  color: #aa6cbc;
+  color: $color-texto;
 }
 
 .textoNosotros {
   font-size: 1.5rem;
-  color: #aa6cbc;
+  color: $color-texto;
 }
 
 .card {
@@ -364,6 +374,10 @@ input:focus {
   padding: 6rem;
   border-radius: 15px;
   box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }
 
 .card2 {
@@ -371,6 +385,10 @@ input:focus {
   padding: 6rem;
   border-radius: 25px;
   box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
 }
 
 .grupoImagen {
@@ -386,9 +404,11 @@ input:focus {
   padding: 2rem;
   font-size: 2.5rem;
   border-radius: 15px;
-  color: #aa6cbc;
+  color: $color-texto;
   box-shadow: 2px 2px 2px 2px rgb(205, 212, 212);
   transition: all 0.2s ease-out;
+  -webkit-border-radius: 15px;
+  -webkit-transition: all 0.2s ease-out;
 }
 .edicionImagenes:hover {
   transform: translateY(-5px) scale(1.005) translateZ(0);
@@ -405,14 +425,14 @@ input:focus {
 }
 
 .textoNovedades {
-  color: #aa6cbc;
+  color: $color-texto;
   font-size: 5rem;
   padding: 2rem;
   text-align: justify;
 }
 
 .textoNovedades1 {
-  color: #aa6cbc;
+  color: $color-texto;
   font-size: 3.5rem;
 }
 
@@ -489,7 +509,7 @@ input:focus {
   }
 
   #nav {
-    background-color: #a8dce3;
+    background-color: $color-container;
     width: 100%;
     height: 18rem;
     position: relative;
@@ -515,7 +535,7 @@ input:focus {
   }
 
   .textoInicioDetalle {
-    background-color: #fb95be;
+    background-color: $color-detalles;
     width: 1rem;
     height: 7rem;
     border-radius: 50px 50px 50px 50px;
@@ -532,7 +552,7 @@ input:focus {
 
   .textoInicio {
     font-size: 2rem;
-    color: #aa6cbc;
+    color: $color-texto;
   }
 
   .imagenInicio {
@@ -543,7 +563,7 @@ input:focus {
 
   .textoInicioCircle {
     position: absolute;
-    background-color: #fb95be;
+    background-color: $color-circulos;
     top: -0rem;
     left: 25rem;
     width: 12rem;
@@ -553,7 +573,7 @@ input:focus {
 
   .textoInicioCircle2 {
     position: absolute;
-    background-color: #fb95be;
+    background-color: $color-circulos;
     top: 14rem;
     right: -15rem;
     width: 500px;
@@ -575,7 +595,7 @@ input:focus {
 
   .pieDePagina {
     width: 100%;
-    background-color: #a8dce3;
+    background-color: $color-container;
     grid-area: pieDePagina;
   }
 
@@ -594,13 +614,13 @@ input:focus {
   }
 
   .textoFooter {
-    color: #aa6cbc;
+    color: $color-texto;
     margin-bottom: 25px;
     font-size: 1.7rem;
   }
 
   .textoFooter2 {
-    color: #aa6cbc;
+    color: $color-texto;
     margin: 0 auto;
     font-size: 1rem;
   }
@@ -610,7 +630,7 @@ input:focus {
   }
 
   .pieDePagina2 {
-    color: #aa6cbc;
+    color: $color-texto;
     font-size: 2rem;
     text-align: center;
     padding-top: 1rem;
@@ -646,12 +666,12 @@ input:focus {
 
   .titleNosotros {
     font-size: 1.5rem;
-    color: #aa6cbc;
+    color: $color-texto;
   }
 
   .textoNosotros {
     font-size: 1rem;
-    color: #aa6cbc;
+    color: $color-texto;
   }
 
   .card {
@@ -659,18 +679,26 @@ input:focus {
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
-  }
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
 
   .card2 {
     margin: 2rem;
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
-  }
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
 
   .divcCircleContactos2 {
     position: absolute;
-    background-color: #fb95be;
+    background-color: $color-circulos;
     width: 12rem;
     height: 12rem;
     border-radius: 50%;
@@ -681,7 +709,7 @@ input:focus {
 
   .divcCircleContactos3 {
     position: absolute;
-    background-color: #fb95be;
+    background-color: $color-circulos;
     width: 5rem;
     height: 5rem;
     top: -48rem;
@@ -712,7 +740,7 @@ input:focus {
     padding: 2rem;
     font-size: 2.5rem;
     border-radius: 15px;
-    color: #aa6cbc;
+    color: $color-texto;
     box-shadow: 2px 2px 2px 2px rgb(205, 212, 212);
   }
 
@@ -734,7 +762,7 @@ input:focus {
   }
 
   #nav {
-    background-color: #a8dce3;
+    background-color: $color-container;
     width: 100%;
     height: 70px;
     position: relative;
@@ -752,7 +780,7 @@ input:focus {
 
   .listaDeMenu {
     display: inline-block;
-    color: #aa6cbc;
+    color: $color-texto;
     padding: 1rem;
     font-size: 2.5rem;
     text-decoration: none;
@@ -765,12 +793,16 @@ input:focus {
   }
 
   .textoInicioDetalle {
-    background-color: #fb95be;
+    background-color: $color-detalles;
     width: 1rem;
     height: 10rem;
     border-radius: 50px 50px 50px 50px;
     margin-left: 25rem;
-  }
+    -webkit-border-radius: 50px 50px 50px 50px;
+    -moz-border-radius: 50px 50px 50px 50px;
+    -ms-border-radius: 50px 50px 50px 50px;
+    -o-border-radius: 50px 50px 50px 50px;
+}
 
   .paddigTextoDeInicio {
     margin-left: 1rem;
@@ -778,7 +810,7 @@ input:focus {
 
   .textoInicio {
     font-size: 3.5rem;
-    color: #aa6cbc;
+    color: $color-texto;
   }
 
   .imagenInicio {
@@ -795,7 +827,7 @@ input:focus {
 
   .textoInicioCircle {
     position: absolute;
-    background-color: #fb95be;
+    background-color: $color-circulos;
     top: -0rem;
     left: 2rem;
     width: 12rem;
@@ -805,7 +837,7 @@ input:focus {
 
   .textoInicioCircle2 {
     position: absolute;
-    background-color: #fb95be;
+    background-color: $color-circulos;
     top: 1rem;
     right: -19rem;
     width: 700px;
@@ -854,12 +886,12 @@ input:focus {
 
   .titleNosotros {
     font-size: 2rem;
-    color: #aa6cbc;
+    color: $color-texto;
   }
 
   .textoNosotros {
     font-size: 1.5rem;
-    color: #aa6cbc;
+    color: $color-texto;
   }
 
   .card {
@@ -867,18 +899,26 @@ input:focus {
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
-  }
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
 
   .card2 {
     margin: 2rem;
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
-  }
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
 
   .divcCircleContactos2 {
     position: absolute;
-    background-color: #fb95be;
+    background-color: $color-circulos;
     width: 12rem;
     height: 12rem;
     border-radius: 50%;
@@ -889,7 +929,7 @@ input:focus {
 
   .divcCircleContactos3 {
     position: absolute;
-    background-color: #fb95be;
+    background-color: $color-circulos;
     width: 5rem;
     height: 5rem;
     top: -48rem;
@@ -921,7 +961,7 @@ input:focus {
     padding: 2rem;
     font-size: 2.5rem;
     border-radius: 15px;
-    color: #aa6cbc;
+    color: $color-especial;
     box-shadow: 2px 2px 2px 2px rgb(205, 212, 212);
   }
 }

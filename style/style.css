@@ -219,6 +219,10 @@ iframe {
   border-bottom: solid 0.1rem #aa6cbc;
   transition: all 0.2s ease;
   width: 100%;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
 }
 
 input:focus {
@@ -366,6 +370,10 @@ input:focus {
   padding: 6rem;
   border-radius: 15px;
   box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }
 
 .card2 {
@@ -373,6 +381,10 @@ input:focus {
   padding: 6rem;
   border-radius: 25px;
   box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
 }
 
 .grupoImagen {
@@ -391,6 +403,8 @@ input:focus {
   color: #aa6cbc;
   box-shadow: 2px 2px 2px 2px rgb(205, 212, 212);
   transition: all 0.2s ease-out;
+  -webkit-border-radius: 15px;
+  -webkit-transition: all 0.2s ease-out;
 }
 
 .edicionImagenes:hover {
@@ -531,7 +545,7 @@ a:active a:hover {
 
   .textoInicioCircle {
     position: absolute;
-    background-color: #fb95be;
+    background-color: #fb95be, #d918bf;
     top: 0rem;
     left: 25rem;
     width: 12rem;
@@ -541,7 +555,7 @@ a:active a:hover {
 
   .textoInicioCircle2 {
     position: absolute;
-    background-color: #fb95be;
+    background-color: #fb95be, #d918bf;
     top: 14rem;
     right: -15rem;
     width: 500px;
@@ -643,6 +657,10 @@ a:active a:hover {
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
   }
 
   .card2 {
@@ -650,11 +668,15 @@ a:active a:hover {
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
   }
 
   .divcCircleContactos2 {
     position: absolute;
-    background-color: #fb95be;
+    background-color: #fb95be, #d918bf;
     width: 12rem;
     height: 12rem;
     border-radius: 50%;
@@ -665,7 +687,7 @@ a:active a:hover {
 
   .divcCircleContactos3 {
     position: absolute;
-    background-color: #fb95be;
+    background-color: #fb95be, #d918bf;
     width: 5rem;
     height: 5rem;
     top: -48rem;
@@ -746,6 +768,10 @@ a:active a:hover {
     height: 10rem;
     border-radius: 50px 50px 50px 50px;
     margin-left: 25rem;
+    -webkit-border-radius: 50px 50px 50px 50px;
+    -moz-border-radius: 50px 50px 50px 50px;
+    -ms-border-radius: 50px 50px 50px 50px;
+    -o-border-radius: 50px 50px 50px 50px;
   }
 
   .paddigTextoDeInicio {
@@ -771,7 +797,7 @@ a:active a:hover {
 
   .textoInicioCircle {
     position: absolute;
-    background-color: #fb95be;
+    background-color: #fb95be, #d918bf;
     top: 0rem;
     left: 2rem;
     width: 12rem;
@@ -781,7 +807,7 @@ a:active a:hover {
 
   .textoInicioCircle2 {
     position: absolute;
-    background-color: #fb95be;
+    background-color: #fb95be, #d918bf;
     top: 1rem;
     right: -19rem;
     width: 700px;
@@ -839,6 +865,10 @@ a:active a:hover {
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
   }
 
   .card2 {
@@ -846,11 +876,15 @@ a:active a:hover {
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
   }
 
   .divcCircleContactos2 {
     position: absolute;
-    background-color: #fb95be;
+    background-color: #fb95be, #d918bf;
     width: 12rem;
     height: 12rem;
     border-radius: 50%;
@@ -861,7 +895,7 @@ a:active a:hover {
 
   .divcCircleContactos3 {
     position: absolute;
-    background-color: #fb95be;
+    background-color: #fb95be, #d918bf;
     width: 5rem;
     height: 5rem;
     top: -48rem;
