@@ -18,7 +18,7 @@ a:active a:hover {
 }
 .logoWeb {
   width: 10rem;
-  margin-right: 40rem;
+  margin-right: 22rem;
 }
 
 .button {
@@ -28,10 +28,6 @@ a:active a:hover {
 .iconos {
   width: 45%;
   height: 5rem;
-}
-
-ul {
-  background-color: #a8dce3;
 }
 
 .navMenu {
@@ -72,20 +68,17 @@ ul {
   display: flex;
   align-items: center;
 }
-
-.textoInicioDetalle {
+.textoInicioPrincipal .textoInicioDetalle {
   background-color: #fb95be;
   width: 1rem;
   height: 135px;
   border-radius: 50px 50px 50px 50px;
   margin-left: 14rem;
 }
-
-.paddigTextoDeInicio {
+.textoInicioPrincipal .paddigTextoDeInicio {
   margin-left: 2rem;
 }
-
-.textoInicio {
+.textoInicioPrincipal .paddigTextoDeInicio .textoInicio {
   font-size: 5rem;
   color: #aa6cbc;
 }
@@ -96,18 +89,6 @@ ul {
   grid-area: imagenInicio;
 }
 
-@keyframes circuloRosaIndex {
-  0% {
-    width: 10rem;
-  }
-  25% {
-    width: 30rem;
-    height: 30rem;
-  }
-  50% {
-    width: 20rem;
-  }
-}
 .textoInicioCircle {
   position: absolute;
   background-image: radial-gradient(#fb95be, #d918bf);
@@ -116,12 +97,6 @@ ul {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  animation-name: circuloRosaIndex;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in;
-  animation-duration: 5s;
-  animation-delay: 1s;
-  z-index: -1;
 }
 
 .textoInicioCircle2 {
@@ -164,18 +139,19 @@ ul {
 
 .box figure img {
   width: 100px;
+  margin: 2rem;
 }
 
 .textoFooter {
   color: #aa6cbc;
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
   font-size: 3rem;
 }
 
 .textoFooter2 {
   color: #aa6cbc;
-  margin-bottom: 5px;
-  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
 }
 
 .redSocial img {
@@ -286,18 +262,6 @@ input:focus {
   position: relative;
 }
 
-@keyframes circuloRosaNovedadesPeque {
-  0% {
-    width: 10rem;
-  }
-  25% {
-    width: 10rem;
-    height: 10rem;
-  }
-  50% {
-    width: 10rem;
-  }
-}
 .divCircleContactos2 {
   position: absolute;
   background-image: radial-gradient(#fb95be, #d918bf);
@@ -308,24 +272,8 @@ input:focus {
   left: 5rem;
   z-index: -1;
   animation-name: circuloRosaNovedadesPeque;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  animation-duration: 5s;
-  animation-delay: 1s;
 }
 
-@keyframes circuloRosaNovedades {
-  0% {
-    width: 10rem;
-  }
-  25% {
-    width: 30rem;
-    height: 30rem;
-  }
-  50% {
-    width: 20rem;
-  }
-}
 .divCircleContactos3 {
   position: absolute;
   background-image: radial-gradient(#fb95be, #d918bf);
@@ -334,12 +282,6 @@ input:focus {
   top: -55rem;
   left: 15rem;
   border-radius: 50%;
-  animation-name: circuloRosaNovedades;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  animation-duration: 5s;
-  animation-delay: 1s;
-  z-index: -1;
 }
 
 .contenedorNosotros {
@@ -356,12 +298,13 @@ input:focus {
 }
 
 .titleNosotros {
-  font-size: 3rem;
+  font-size: 4rem;
   color: #aa6cbc;
 }
 
 .textoNosotros {
-  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  font-size: 1.9rem;
   color: #aa6cbc;
 }
 
@@ -371,13 +314,11 @@ input:focus {
   border-radius: 15px;
   box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
   -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
 }
 
 .card2 {
-  max-width: 70rem;
+  max-width: 76rem;
+  height: 30rem;
   padding: 6rem;
   border-radius: 25px;
   box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
@@ -410,27 +351,39 @@ input:focus {
 .edicionImagenes:hover {
   transform: translateY(-5px) scale(1.005) translateZ(0);
   box-shadow: 1rem 1rem 1rem 1rem rgba(0, 0, 0, 0.11), 1rem 2rem 2rem;
+  -webkit-transform: translateY(-5px) scale(1.005) translateZ(0);
+  -moz-transform: translateY(-5px) scale(1.005) translateZ(0);
+  -ms-transform: translateY(-5px) scale(1.005) translateZ(0);
+  -o-transform: translateY(-5px) scale(1.005) translateZ(0);
 }
 
 .imagenesNovedades {
   padding: 1rem;
 }
 
+.contenedor {
+  margin: 0;
+}
+
 .grupoNovedades {
   padding: 5rem;
   text-align: justify;
 }
-
-.textoNovedades {
+.grupoNovedades .textoNovedades {
   color: #aa6cbc;
-  font-size: 5rem;
   padding: 2rem;
   text-align: justify;
+  font-size: 3rem;
 }
-
-.textoNovedades1 {
+.grupoNovedades .textoNovedades1 {
   color: #aa6cbc;
-  font-size: 3.5rem;
+}
+.grupoNovedades .textoNovedades1 .subtitulos {
+  font-size: 3rem;
+}
+.grupoNovedades .textoNovedades1 .informacionTexto {
+  font-size: 2rem;
+  margin-bottom: 4rem;
 }
 
 .subtituloProductos {
@@ -461,7 +414,7 @@ input:focus {
 .gridNosotros {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.2fr 0.1fr 1fr 0.2fr;
+  grid-template-rows: 0.2fr 1fr 1fr 0.2fr;
   min-height: 100vh;
   grid-template-areas: "nav nav nav" "gridConterdorNosotros gridConterdorNosotros gridConterdorNosotros " "gridConterdorNosotros2 gridConterdorNosotros2 gridConterdorNosotros2" "pieDePagina pieDePagina pieDePagina";
 }
