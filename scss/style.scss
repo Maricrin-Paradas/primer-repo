@@ -106,6 +106,13 @@ a:active a:hover {
   border-radius: 50%;
 }
 
+input {
+  caret-color: $color-texto;
+}
+textarea {
+  caret-color: $color-texto;
+}
+
 .textoInicioCircle2 {
   position: absolute;
   background-image: radial-gradient($color-circulos);
@@ -380,6 +387,7 @@ input:focus {
 
 .subtituloProductos {
   margin-bottom: 1rem;
+  margin-top: 2rem;
 }
 
 .precio {
