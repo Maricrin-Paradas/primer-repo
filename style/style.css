@@ -1,399 +1,3 @@
-* {
-  font-size: 62.5%;
-  margin: 0;
-  padding: 0;
-  font-family: "Montserrat";
-}
-
-a:link,
-a:visited,
-a:active a:hover {
-  text-decoration: none;
-  color: #aa6cbc;
-}
-
-@font-face {
-  font-family: Montserrat;
-  src: url("../IMG/Montserrat-Italic-VariableFont_wght.ttf");
-}
-.logoWeb {
-  width: 10rem;
-  margin-right: 22rem;
-}
-
-.button {
-  font-size: 4rem;
-}
-
-.iconos {
-  width: 45%;
-  height: 5rem;
-}
-
-.navMenu {
-  grid-area: nav;
-}
-
-.navbar {
-  background-color: #a8dce3;
-}
-
-.contenedorNavbar {
-  height: 12rem;
-}
-
-.nav-link {
-  font-size: 3rem;
-  margin: 3.5rem;
-  display: inline-flex;
-}
-
-.contenedorConta {
-  height: 100vh;
-}
-
-.row {
-  z-index: -1;
-}
-
-.carritoDeCompra {
-  width: 8rem;
-  height: 7rem;
-  margin: 2rem 4rem;
-}
-
-.textoInicioPrincipal {
-  grid-area: textoInicioPrincipal;
-  height: 20rem;
-  display: flex;
-  align-items: center;
-}
-.textoInicioPrincipal .textoInicioDetalle {
-  background-color: #fb95be;
-  width: 1rem;
-  height: 135px;
-  border-radius: 50px 50px 50px 50px;
-  margin-left: 14rem;
-}
-.textoInicioPrincipal .paddigTextoDeInicio {
-  margin-left: 2rem;
-}
-.textoInicioPrincipal .paddigTextoDeInicio .textoInicio {
-  font-size: 5rem;
-  color: #aa6cbc;
-}
-
-.imagenInicio {
-  position: relative;
-  overflow: hidden;
-  grid-area: imagenInicio;
-}
-
-.textoInicioCircle {
-  position: absolute;
-  background-image: radial-gradient(#fb95be, #d918bf);
-  top: 200px;
-  left: 200px;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-}
-
-.textoInicioCircle2 {
-  position: absolute;
-  background-image: radial-gradient(#fb95be, #d918bf);
-  top: 0px;
-  right: -80px;
-  width: 1000px;
-  height: 1000px;
-  border-radius: 50%;
-  z-index: -1;
-}
-
-.imagenInicio2 {
-  float: right;
-  position: relative;
-}
-
-.alto {
-  height: 100vh;
-}
-
-.pieDePagina {
-  width: 100%;
-  padding: 2rem 0;
-  background-color: #a8dce3;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  grid-area: pieDePagina;
-}
-
-.grupoFooter {
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.box figure img {
-  width: 100px;
-  margin: 2rem;
-}
-
-.textoFooter {
-  color: #aa6cbc;
-  margin-bottom: 3rem;
-  font-size: 3rem;
-}
-
-.textoFooter2 {
-  color: #aa6cbc;
-  margin-bottom: 1rem;
-  font-size: 1.8rem;
-}
-
-.redSocial img {
-  width: 20rem;
-}
-
-.pieDePagina2 {
-  color: #aa6cbc;
-  margin-bottom: 1rem;
-  font-size: 2rem;
-  text-align: center;
-}
-
-.mapa {
-  width: 100%;
-  height: 50rem;
-}
-
-iframe {
-  width: 200%;
-  height: 50rem;
-}
-
-.textoFormulario {
-  width: 25%;
-}
-
-.cajaDeFormularios {
-  position: relative;
-  margin-bottom: 6rem;
-  width: 100%;
-  height: 1rem;
-  border-bottom: 1px solid white;
-}
-
-.inputNombre {
-  font-size: 2rem;
-  padding: 1.5rem;
-  border: none;
-  outline: none;
-  border-bottom: solid 0.1rem #aa6cbc;
-  transition: all 0.2s ease;
-  width: 100%;
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  -ms-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-}
-
-input:focus {
-  padding-bottom: 1rem;
-}
-
-.inputApellido {
-  font-size: 2rem;
-  padding: 1.5rem;
-  border: none;
-  outline: none;
-  border-bottom: solid 0.1rem #aa6cbc;
-  transition: all 0.2s ease;
-  width: 100%;
-}
-
-.inputCorreo {
-  font-size: 2rem;
-  padding: 1.5rem;
-  border: none;
-  outline: none;
-  border-bottom: solid 0.1rem #aa6cbc;
-  transition: all 0.2s ease;
-  width: 100%;
-}
-
-.textoMensaje {
-  width: 100%;
-  height: 15rem;
-  font-size: 2rem;
-  padding: 1.5rem;
-  border: none;
-  outline: none;
-  border-bottom: solid 0.1rem #aa6cbc;
-  transition: all 0.2s ease;
-}
-
-.cajaBotonEnviar {
-  display: flex;
-  justify-content: center;
-  height: 5rem;
-  margin-top: 20rem;
-}
-
-.botonDeEnviar {
-  width: 25%;
-  font-size: 2rem;
-  background-color: #fff;
-  color: #aa6cbc;
-  border: 0.1rem solid #aa6cbc;
-  outline: none;
-  transition-duration: 0.4s;
-}
-
-.botonDeEnviar:hover {
-  background-color: #aa6cbc;
-  color: white;
-}
-
-.circleConta2 {
-  position: relative;
-}
-
-.divCircleContactos2 {
-  position: absolute;
-  background-image: radial-gradient(#fb95be, #d918bf);
-  width: 20rem;
-  height: 20rem;
-  border-radius: 50%;
-  top: -40rem;
-  left: 5rem;
-  z-index: -1;
-  animation-name: circuloRosaNovedadesPeque;
-}
-
-.divCircleContactos3 {
-  position: absolute;
-  background-image: radial-gradient(#fb95be, #d918bf);
-  width: 8rem;
-  height: 8rem;
-  top: -55rem;
-  left: 15rem;
-  border-radius: 50%;
-}
-
-.contenedorNosotros {
-  grid-area: contenedorNosotros;
-  display: flex;
-  justify-content: space-evenly;
-  margin: 12rem 15rem 4rem;
-}
-
-.contenedorNosotros2 {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 15rem;
-}
-
-.titleNosotros {
-  font-size: 4rem;
-  color: #aa6cbc;
-}
-
-.textoNosotros {
-  margin-top: 1.5rem;
-  font-size: 1.9rem;
-  color: #aa6cbc;
-}
-
-.card {
-  margin: 3rem;
-  padding: 6rem;
-  border-radius: 15px;
-  box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
-  -webkit-border-radius: 15px;
-}
-
-.card2 {
-  max-width: 76rem;
-  height: 30rem;
-  padding: 6rem;
-  border-radius: 25px;
-  box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  -ms-border-radius: 25px;
-  -o-border-radius: 25px;
-}
-
-.grupoImagen {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin: 3rem;
-  grid-area: grupoImagen;
-}
-
-.edicionImagenes {
-  margin: 2rem;
-  padding: 2rem;
-  font-size: 2.5rem;
-  border-radius: 15px;
-  color: #aa6cbc;
-  box-shadow: 2px 2px 2px 2px rgb(205, 212, 212);
-  transition: all 0.2s ease-out;
-  -webkit-border-radius: 15px;
-  -webkit-transition: all 0.2s ease-out;
-}
-
-.edicionImagenes:hover {
-  transform: translateY(-5px) scale(1.005) translateZ(0);
-  box-shadow: 1rem 1rem 1rem 1rem rgba(0, 0, 0, 0.11), 1rem 2rem 2rem;
-  -webkit-transform: translateY(-5px) scale(1.005) translateZ(0);
-  -moz-transform: translateY(-5px) scale(1.005) translateZ(0);
-  -ms-transform: translateY(-5px) scale(1.005) translateZ(0);
-  -o-transform: translateY(-5px) scale(1.005) translateZ(0);
-}
-
-.imagenesNovedades {
-  padding: 1rem;
-}
-
-.contenedor {
-  margin: 0;
-}
-
-.grupoNovedades {
-  padding: 5rem;
-  text-align: justify;
-}
-.grupoNovedades .textoNovedades {
-  color: #aa6cbc;
-  padding: 2rem;
-  text-align: justify;
-  font-size: 3rem;
-}
-.grupoNovedades .textoNovedades1 {
-  color: #aa6cbc;
-}
-.grupoNovedades .textoNovedades1 .subtitulos {
-  font-size: 3rem;
-}
-.grupoNovedades .textoNovedades1 .informacionTexto {
-  font-size: 2rem;
-  margin-bottom: 4rem;
-}
-
-.subtituloProductos {
-  margin-bottom: 1rem;
-}
-
-.precio {
-  margin-bottom: 1rem;
-}
-
 .gridConterdorNosotros {
   grid-area: gridConterdorNosotros;
   z-index: -1;
@@ -880,6 +484,394 @@ a:active a:hover {
     color: #aa6cbc;
     box-shadow: 2px 2px 2px 2px rgb(205, 212, 212);
   }
+}
+* {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+}
+
+a:link,
+a:visited,
+a:active a:hover {
+  text-decoration: none;
+  color: #aa6cbc;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("../IMG/Montserrat-Italic-VariableFont_wght.ttf");
+}
+.logoWeb {
+  width: 10rem;
+  margin-right: 22rem;
+}
+
+.button {
+  font-size: 4rem;
+}
+
+.iconos {
+  width: 45%;
+  height: 5rem;
+}
+
+.navMenu {
+  grid-area: nav;
+}
+
+.navbar {
+  background-color: #a8dce3;
+}
+
+.contenedorNavbar {
+  height: 12rem;
+}
+
+.nav-link {
+  font-size: 3rem;
+  margin: 3.5rem;
+  display: inline-flex;
+}
+
+.contenedorConta {
+  height: 100vh;
+}
+
+.row {
+  z-index: -1;
+}
+
+.carritoDeCompra {
+  width: 8rem;
+  height: 7rem;
+  margin: 2rem 4rem;
+}
+
+.textoInicioPrincipal {
+  grid-area: textoInicioPrincipal;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+}
+.textoInicioPrincipal .textoInicioDetalle {
+  background-color: #fb95be;
+  width: 1rem;
+  height: 135px;
+  border-radius: 50px 50px 50px 50px;
+  margin-left: 14rem;
+}
+.textoInicioPrincipal .paddigTextoDeInicio {
+  margin-left: 2rem;
+}
+.textoInicioPrincipal .paddigTextoDeInicio .textoInicio {
+  font-size: 5rem;
+  color: #aa6cbc;
+}
+
+.imagenInicio {
+  position: relative;
+  overflow: hidden;
+  grid-area: imagenInicio;
+}
+
+.textoInicioCircle {
+  position: absolute;
+  background-image: radial-gradient(#fb95be, #d918bf);
+  top: 200px;
+  left: 200px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.textoInicioCircle2 {
+  position: absolute;
+  background-image: radial-gradient(#fb95be, #d918bf);
+  top: 0px;
+  right: -80px;
+  width: 1000px;
+  height: 1000px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.imagenInicio2 {
+  float: right;
+  position: relative;
+}
+
+.alto {
+  height: 100vh;
+}
+
+.pieDePagina {
+  width: 100%;
+  padding: 2rem 0;
+  background-color: #a8dce3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: pieDePagina;
+}
+
+.grupoFooter {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.box figure img {
+  width: 100px;
+  margin: 2rem;
+}
+
+.textoFooter {
+  color: #aa6cbc;
+  margin-bottom: 3rem;
+  font-size: 3rem;
+}
+
+.textoFooter2 {
+  color: #aa6cbc;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.redSocial img {
+  width: 20rem;
+}
+
+.pieDePagina2 {
+  color: #aa6cbc;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.mapa {
+  width: 100%;
+  height: 50rem;
+}
+
+iframe {
+  width: 200%;
+  height: 50rem;
+}
+
+.textoFormulario {
+  width: 25%;
+}
+
+.cajaDeFormularios {
+  position: relative;
+  margin-bottom: 6rem;
+  width: 100%;
+  height: 1rem;
+  border-bottom: 1px solid white;
+}
+
+.inputNombre {
+  font-size: 2rem;
+  padding: 1.5rem;
+  border: none;
+  outline: none;
+  border-bottom: solid 0.1rem #aa6cbc;
+  transition: all 0.2s ease;
+  width: 100%;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
+
+input:focus {
+  padding-bottom: 1rem;
+}
+
+.inputApellido {
+  font-size: 2rem;
+  padding: 1.5rem;
+  border: none;
+  outline: none;
+  border-bottom: solid 0.1rem #aa6cbc;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.inputCorreo {
+  font-size: 2rem;
+  padding: 1.5rem;
+  border: none;
+  outline: none;
+  border-bottom: solid 0.1rem #aa6cbc;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.textoMensaje {
+  width: 100%;
+  height: 15rem;
+  font-size: 2rem;
+  padding: 1.5rem;
+  border: none;
+  outline: none;
+  border-bottom: solid 0.1rem #aa6cbc;
+  transition: all 0.2s ease;
+}
+
+.cajaBotonEnviar {
+  display: flex;
+  justify-content: center;
+  height: 5rem;
+  margin-top: 20rem;
+}
+
+.botonDeEnviar {
+  width: 25%;
+  font-size: 2rem;
+  background-color: #fff;
+  color: #aa6cbc;
+  border: 0.1rem solid #aa6cbc;
+  outline: none;
+  transition-duration: 0.4s;
+}
+
+.botonDeEnviar:hover {
+  background-color: #aa6cbc;
+  color: white;
+}
+
+.circleConta2 {
+  position: relative;
+}
+
+.divCircleContactos2 {
+  position: absolute;
+  background-image: radial-gradient(#fb95be, #d918bf);
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  top: -40rem;
+  left: 5rem;
+  z-index: -1;
+  animation-name: circuloRosaNovedadesPeque;
+}
+
+.divCircleContactos3 {
+  position: absolute;
+  background-image: radial-gradient(#fb95be, #d918bf);
+  width: 8rem;
+  height: 8rem;
+  top: -55rem;
+  left: 15rem;
+  border-radius: 50%;
+}
+
+.contenedorNosotros {
+  grid-area: contenedorNosotros;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 12rem 15rem 4rem;
+}
+
+.contenedorNosotros2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15rem;
+}
+
+.titleNosotros {
+  font-size: 4rem;
+  color: #aa6cbc;
+}
+
+.textoNosotros {
+  margin-top: 1.5rem;
+  font-size: 1.9rem;
+  color: #aa6cbc;
+}
+
+.card {
+  margin: 3rem;
+  padding: 6rem;
+  border-radius: 15px;
+  box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
+  -webkit-border-radius: 15px;
+}
+
+.card2 {
+  max-width: 76rem;
+  height: 30rem;
+  padding: 6rem;
+  border-radius: 25px;
+  box-shadow: 3px 3px 3px 3px rgb(205, 212, 212);
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.grupoImagen {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 3rem;
+  grid-area: grupoImagen;
+}
+
+.edicionImagenes {
+  margin: 2rem;
+  padding: 2rem;
+  font-size: 2.5rem;
+  border-radius: 15px;
+  color: #aa6cbc;
+  box-shadow: 2px 2px 2px 2px rgb(205, 212, 212);
+  transition: all 0.2s ease-out;
+}
+.edicionImagenes .edicionImagenes:hover {
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+  box-shadow: 1rem 1rem 1rem 1rem rgba(0, 0, 0, 0.11), 1rem 2rem 2rem;
+}
+
+.imagenesNovedades {
+  padding: 1rem;
+}
+
+.contenedor {
+  margin: 0;
+}
+
+.grupoNovedades {
+  padding: 5rem;
+  text-align: justify;
+}
+.grupoNovedades .textoNovedades {
+  color: #aa6cbc;
+  padding: 2rem;
+  text-align: justify;
+  font-size: 3rem;
+}
+.grupoNovedades .textoNovedades1 {
+  color: #aa6cbc;
+}
+.grupoNovedades .textoNovedades1 .subtitulos {
+  font-size: 3rem;
+}
+.grupoNovedades .textoNovedades1 .informacionTexto {
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+
+.subtituloProductos {
+  margin-bottom: 1rem;
+}
+
+.precio {
+  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

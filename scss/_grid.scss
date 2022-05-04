@@ -1,0 +1,43 @@
+.gridConterdorNosotros {
+  grid-area: gridConterdorNosotros;
+  z-index: -1;
+}
+
+.gridConterdorNosotros2 {
+  grid-area: gridConterdorNosotros2;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 0.1fr 1fr 0.2fr;
+  min-height: 100vh;
+  grid-template-areas:
+    "nav nav nav"
+    "textoInicioPrincipal textoInicioPrincipal textoInicioPrincipal "
+    "imagenInicio imagenInicio imagenInicio"
+    "pieDePagina pieDePagina pieDePagina";
+}
+
+.gridNosotros {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1fr 1fr 0.2fr;
+  min-height: 100vh;
+  grid-template-areas:
+    "nav nav nav"
+    "gridConterdorNosotros gridConterdorNosotros gridConterdorNosotros "
+    "gridConterdorNosotros2 gridConterdorNosotros2 gridConterdorNosotros2"
+    "pieDePagina pieDePagina pieDePagina";
+}
+
+.gridInsumos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1fr 0.2fr;
+  min-height: 100vh;
+  grid-template-areas:
+    "nav nav nav"
+    "grupoImagen grupoImagen grupoImagen"
+    "pieDePagina pieDePagina pieDePagina";
+}
