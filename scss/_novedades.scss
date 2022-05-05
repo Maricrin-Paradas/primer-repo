@@ -1,0 +1,39 @@
+
+
+.imagenesNovedades {
+  padding: 1rem;
+}
+
+.contenedor{
+  margin: 0;
+}
+
+.grupoNovedades {
+  padding: 5rem;
+  text-align: justify;
+  .textoNovedades {
+    color: $color-texto;
+    padding: 2rem;
+    text-align: justify;
+    font-size: 3rem;
+  }
+  .textoNovedades1 {
+    color: $color-texto;
+    .subtitulos{
+      font-size: 3rem;
+    }
+    .informacionTexto {
+      font-size: 2rem;
+      margin-bottom: 4rem;
+    }
+  }
+}
+
+.subtituloProductos {
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.precio {
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,109 @@
+.contenedorConta {
+  height: 100vh;
+  margin: auto;
+}
+
+.row {
+  z-index: -1;
+}
+.cajaDeFormularios {
+  position: relative;
+  margin-bottom: 6rem;
+  width: 100%;
+  height: 1rem;
+  border-bottom: 1px solid white;
+}
+
+.inputNombre {
+  font-size: 2rem;
+  padding: 1.5rem;
+  border: none;
+  outline: none;
+  border-bottom: solid 0.1rem $color-especial;
+  transition: all 0.2s ease;
+  width: 100%;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
+
+input:focus {
+  padding-bottom: 1rem;
+}
+
+.inputApellido {
+  font-size: 2rem;
+  padding: 1.5rem;
+  border: none;
+  outline: none;
+  border-bottom: solid 0.1rem $color-especial;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+.inputCorreo {
+  font-size: 2rem;
+  padding: 1.5rem;
+  border: none;
+  outline: none;
+  border-bottom: solid 0.1rem $color-especial;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+.textoMensaje {
+  width: 100%;
+  height: 15rem;
+  font-size: 2rem;
+  padding: 1.5rem;
+  border: none;
+  outline: none;
+  border-bottom: solid 0.1rem $color-especial;
+  transition: all 0.2s ease;
+}
+
+.cajaBotonEnviar {
+  display: flex;
+  justify-content: center;
+  height: 5rem;
+  margin-top: 20rem;
+}
+
+.botonDeEnviar {
+  width: 25%;
+  font-size: 2rem;
+  background-color: #fff;
+  color: $color-especial;
+  border: 0.1rem solid $color-especial;
+  outline: none;
+  transition-duration: 0.4s;
+}
+
+.botonDeEnviar:hover {
+  background-color: $color-especial;
+  color: white;
+}
+.circleConta2 {
+  position: relative;
+}
+
+.divCircleContactos2 {
+  position: absolute;
+  background-image: radial-gradient($color-circulos);
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  top: -40rem;
+  left: 5rem;
+  z-index: -1;
+  animation-name: circuloRosaNovedadesPeque;
+}
+
+.divCircleContactos3 {
+  position: absolute;
+  background-image: radial-gradient($color-circulos);
+  width: 8rem;
+  height: 8rem;
+  top: -55rem;
+  left: 15rem;
+  border-radius: 50%;
+}

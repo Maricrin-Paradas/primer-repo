@@ -1,0 +1,179 @@
+* {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+}
+
+a:link,
+a:visited,
+a:active a:hover {
+  text-decoration: none;
+  color: $color-texto;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("../IMG/Montserrat-Italic-VariableFont_wght.ttf");
+}
+
+.logoWeb {
+  width: 10rem;
+  margin-right: 22rem;
+}
+
+.button {
+  font-size: 4rem;
+}
+
+.iconos {
+  width: 45%;
+  height: 5rem;
+}
+
+.navMenu {
+  grid-area: nav;
+}
+
+.navbar {
+  background-color: $color-container;
+}
+
+.contenedorNavbar {
+  height: 12rem;
+}
+
+.nav-link {
+  font-size: 3rem;
+  margin: 3.5rem;
+  display: inline-flex;
+}
+
+
+
+.carritoDeCompra {
+  width: 8rem;
+  height: 7rem;
+  margin: 2rem 4rem;
+}
+
+.textoInicioPrincipal {
+  grid-area: textoInicioPrincipal;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  .textoInicioDetalle {
+    background-color: $color-detalles;
+    width: 1rem;
+    height: 135px;
+    border-radius: 50px 50px 50px 50px;
+    margin-left: 14rem;
+  }
+  .paddigTextoDeInicio {
+    margin-left: 2rem;
+    .textoInicio {
+      font-size: 5rem;
+      color: $color-texto;
+    }
+  }
+}
+
+.imagenInicio {
+  position: relative;
+  overflow: hidden;
+  grid-area: imagenInicio;
+}
+
+.textoInicioCircle {
+  position: absolute;
+  background-image: radial-gradient($color-circulos);
+  top: 200px;
+  left: 200px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+input {
+  caret-color: $color-texto;
+}
+textarea {
+  caret-color: $color-texto;
+}
+
+.textoInicioCircle2 {
+  position: absolute;
+  background-image: radial-gradient($color-circulos);
+  top: -0px;
+  right: -80px;
+  width: 1000px;
+  height: 1000px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.imagenInicio2 {
+  float: right;
+  position: relative;
+}
+.alto {
+  height: 100vh;
+}
+.pieDePagina {
+  width: 100%;
+  padding: 2rem 0;
+  background-color: $color-container;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: pieDePagina;
+}
+
+.grupoFooter {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+.box figure img {
+  width: 100px;
+  margin: 2rem;
+}
+
+.textoFooter {
+  color: $color-texto;
+  margin-bottom: 3rem;
+  font-size: 3rem;
+}
+
+.textoFooter2 {
+  color: $color-texto;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.redSocial img {
+  width: 20rem;
+}
+
+.pieDePagina2 {
+  color: $color-texto;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.mapa {
+  width: 100%;
+  height: 50rem;
+}
+
+iframe {
+  width: 200%;
+  height: 50rem;
+}
+
+.textoFormulario {
+  width: 25%;
+}
