@@ -1,0 +1,40 @@
+
+@media  (min-width:425px) {
+  .imagenInicio{
+    width:100%;
+  }
+
+  .imagenInicio2 {
+    position:absolute;
+    right: -15rem;
+  }
+
+  .foto{
+    width: 50rem;
+  }
+
+  .textoInicioCircle {
+  position: absolute;
+  background-image: radial-gradient($color-circulos);
+  top: 200px;
+  left: 200px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+
+
+  .textoInicioCircle2 {
+  position: absolute;
+  background-image: radial-gradient($color-circulos);
+  bottom: -2rem;
+  right: -80px;
+  width: 50rem;
+  height: 50rem;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+
+}

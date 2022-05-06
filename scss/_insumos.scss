@@ -1,0 +1,18 @@
+.grupoImagen {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 3rem;
+  grid-area: grupoImagen;
+}
+
+.edicionImagenes {
+  @include CardProductos;
+  box-shadow: 2px 2px 2px 2px rgb(205, 212, 212);
+  transition: all 0.2s ease-out;
+  .edicionImagenes:hover {
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+    box-shadow: 1rem 1rem 1rem 1rem rgba(0, 0, 0, 0.11), 1rem 2rem 2rem;
+  }
+}
+

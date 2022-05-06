@@ -43,13 +43,23 @@ a:active a:hover {
   height: 12rem;
 }
 
+
+.contenedorHome {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items:flex-end;
+}
+
 .nav-link {
   font-size: 3rem;
   margin: 3.5rem;
   display: inline-flex;
 }
-
-
+.navbar-nav {
+  background-color: $color-container;
+}
 
 .carritoDeCompra {
   width: 8rem;
@@ -79,9 +89,11 @@ a:active a:hover {
 }
 
 .imagenInicio {
+  height: 66rem;
   position: relative;
+  object-fit: cover;
   overflow: hidden;
-  grid-area: imagenInicio;
+  align-items: flex-end;
 }
 
 .textoInicioCircle {
@@ -92,6 +104,8 @@ a:active a:hover {
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  -webkit-border-radius: 50%;
+
 }
 
 input {
@@ -106,19 +120,19 @@ textarea {
   background-image: radial-gradient($color-circulos);
   top: -0px;
   right: -80px;
-  width: 1000px;
-  height: 1000px;
+  width: 100rem;
+  height: 100rem;
   border-radius: 50%;
   z-index: -1;
+
 }
 
 .imagenInicio2 {
-  float: right;
-  position: relative;
+  position: absolute;
+  right: 2rem;
+  bottom: 0;
 }
-.alto {
-  height: 100vh;
-}
+
 .pieDePagina {
   width: 100%;
   padding: 2rem 0;
@@ -177,3 +191,4 @@ iframe {
 .textoFormulario {
   width: 25%;
 }
+
