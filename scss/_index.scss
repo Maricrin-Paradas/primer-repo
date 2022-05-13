@@ -31,10 +31,6 @@ a:active a:hover {
   height: 5rem;
 }
 
-.navMenu {
-  grid-area: nav;
-}
-
 .navbar {
   background-color: $color-container;
 }
@@ -75,7 +71,7 @@ a:active a:hover {
   .textoInicioDetalle {
     background-color: $color-detalles;
     width: 1rem;
-    height: 135px;
+    height: 15rem;
     border-radius: 50px 50px 50px 50px;
     margin-left: 14rem;
   }
@@ -99,10 +95,10 @@ a:active a:hover {
 .textoInicioCircle {
   position: absolute;
   background-image: radial-gradient($color-circulos);
-  top: 200px;
-  left: 200px;
-  width: 200px;
-  height: 200px;
+  top: 20rem;
+  left: 20rem;
+  width: 20rem;
+  height: 20rem;
   border-radius: 50%;
   -webkit-border-radius: 50%;
 
@@ -145,13 +141,13 @@ textarea {
 
 .grupoFooter {
   width: 100%;
-  max-width: 1200px;
+  max-width: 120rem;
   margin: auto;
   display: flex;
   justify-content: space-evenly;
 }
 .box figure img {
-  width: 100px;
+  width: 15rem;
   margin: 2rem;
 }
 
@@ -191,4 +187,3 @@ iframe {
 .textoFormulario {
   width: 25%;
 }
-

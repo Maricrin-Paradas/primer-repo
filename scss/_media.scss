@@ -1,38 +1,133 @@
+@media screen and (min-width: 425px) and (max-width: 768px) {
 
-@media  (min-width:425px) {
-  .imagenInicio{
-    width:100%;
-  }
-
-  .imagenInicio2 {
-    position:absolute;
-    right: -15rem;
-  }
-
-  .foto{
-    width: 50rem;
-  }
-
-  .textoInicioCircle {
-  position: absolute;
-  background-image: radial-gradient($color-circulos);
-  top: 200px;
-  left: 200px;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
+  .textoInicioPrincipal {
+    grid-area: textoInicioPrincipal;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    .textoInicioDetalle {
+      background-color: $color-detalles;
+      width: 1rem;
+      height: 9rem;
+      border-radius: 50px 50px 50px 50px;
+      margin-left: 7rem;
+      -webkit-border-radius: 50px 50px 50px 50px;
+      -moz-border-radius: 50px 50px 50px 50px;
+      -ms-border-radius: 50px 50px 50px 50px;
+      -o-border-radius: 50px 50px 50px 50px;
 }
+    .paddigTextoDeInicio {
+      margin-left: 2rem;
+      .textoInicio {
+        font-size: 2.5rem;
+        color: $color-texto;
+      }
+    }
+  }
+
+  .imagenInicio {
+    height: 66rem;
+    position: relative;
+    object-fit: cover;
+    overflow: hidden;
+    align-items: flex-end;
+    z-index: -1;
+  }
+
+  .foto {
+    width: 165%;
+  }
+  .textoInicioCircle {
+    position: absolute;
+    background-image: radial-gradient($color-circulos);
+    top: 0rem;
+    left: 20rem;
+    width: 11rem;
+    height: 11rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    z-index: -1;
+
+  }
 
 
   .textoInicioCircle2 {
-  position: absolute;
-  background-image: radial-gradient($color-circulos);
-  bottom: -2rem;
-  right: -80px;
-  width: 50rem;
-  height: 50rem;
-  border-radius: 50%;
-  z-index: -1;
+    position: absolute;
+    background-image: radial-gradient($color-circulos);
+    top: 16rem;
+    left: 0rem;
+    width: 66rem;
+    height: 66rem;
+    border-radius: 50%;
+    z-index: -1;
+
+  }
+
+
 }
+
+@media (max-width: 768px) {
+
+  .textoInicioPrincipal {
+      grid-area: textoInicioPrincipal;
+      height: 20rem;
+      display: flex;
+      align-items: center;
+      .textoInicioDetalle {
+        background-color: $color-detalles;
+        width: 1rem;
+        height: 9rem;
+        border-radius: 50px 50px 50px 50px;
+        margin-left: 7rem;
+        -webkit-border-radius: 50px 50px 50px 50px;
+        -moz-border-radius: 50px 50px 50px 50px;
+        -ms-border-radius: 50px 50px 50px 50px;
+        -o-border-radius: 50px 50px 50px 50px;
+  }
+      .paddigTextoDeInicio {
+        margin-left: 2rem;
+        .textoInicio {
+          font-size: 2.5rem;
+          color: $color-texto;
+        }
+      }
+    }
+
+    .imagenInicio {
+      height: 66rem;
+      position: relative;
+      object-fit: cover;
+      overflow: hidden;
+      align-items: flex-end;
+      z-index: -1;
+    }
+
+    .foto {
+      width: 127%;
+    }
+    .textoInicioCircle {
+      position: absolute;
+      background-image: radial-gradient($color-circulos);
+      top: 0rem;
+      left: 2rem;
+      width: 11rem;
+      height: 11rem;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      z-index: -1;
+
+    }
+
+
+    .textoInicioCircle2 {
+      position: absolute;
+      background-image: radial-gradient($color-circulos);
+      top: 0rem;
+      left: 1rem;
+      width: 85rem;
+      height: 85rem;
+      border-radius: 50%;
+      z-index: -1;
+
+    }
 }

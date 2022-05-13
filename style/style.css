@@ -30,10 +30,6 @@ a:active a:hover {
   height: 5rem;
 }
 
-.navMenu {
-  grid-area: nav;
-}
-
 .navbar {
   background-color: #a8dce3;
 }
@@ -75,7 +71,7 @@ a:active a:hover {
 .textoInicioPrincipal .textoInicioDetalle {
   background-color: #fb95be;
   width: 1rem;
-  height: 135px;
+  height: 15rem;
   border-radius: 50px 50px 50px 50px;
   margin-left: 14rem;
 }
@@ -98,10 +94,10 @@ a:active a:hover {
 .textoInicioCircle {
   position: absolute;
   background-image: radial-gradient(#fb95be, #d918bf);
-  top: 200px;
-  left: 200px;
-  width: 200px;
-  height: 200px;
+  top: 20rem;
+  left: 20rem;
+  width: 20rem;
+  height: 20rem;
   border-radius: 50%;
   -webkit-border-radius: 50%;
 }
@@ -143,14 +139,14 @@ textarea {
 
 .grupoFooter {
   width: 100%;
-  max-width: 1200px;
+  max-width: 120rem;
   margin: auto;
   display: flex;
   justify-content: space-evenly;
 }
 
 .box figure img {
-  width: 100px;
+  width: 15rem;
   margin: 2rem;
 }
 
@@ -421,38 +417,126 @@ input:focus {
   margin-bottom: 1rem;
 }
 
-@media (min-width: 425px) {
-  .imagenInicio {
-    width: 100%;
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  .textoInicioPrincipal {
+    grid-area: textoInicioPrincipal;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+  }
+  .textoInicioPrincipal .textoInicioDetalle {
+    background-color: #fb95be;
+    width: 1rem;
+    height: 9rem;
+    border-radius: 50px 50px 50px 50px;
+    margin-left: 7rem;
+    -webkit-border-radius: 50px 50px 50px 50px;
+    -moz-border-radius: 50px 50px 50px 50px;
+    -ms-border-radius: 50px 50px 50px 50px;
+    -o-border-radius: 50px 50px 50px 50px;
+  }
+  .textoInicioPrincipal .paddigTextoDeInicio {
+    margin-left: 2rem;
+  }
+  .textoInicioPrincipal .paddigTextoDeInicio .textoInicio {
+    font-size: 2.5rem;
+    color: #aa6cbc;
   }
 
-  .imagenInicio2 {
-    position: absolute;
-    right: -15rem;
+  .imagenInicio {
+    height: 66rem;
+    position: relative;
+    object-fit: cover;
+    overflow: hidden;
+    align-items: flex-end;
+    z-index: -1;
   }
 
   .foto {
-    width: 50rem;
+    width: 165%;
   }
 
   .textoInicioCircle {
     position: absolute;
     background-image: radial-gradient(#fb95be, #d918bf);
-    top: 200px;
-    left: 200px;
-    width: 200px;
-    height: 200px;
+    top: 0rem;
+    left: 20rem;
+    width: 11rem;
+    height: 11rem;
     border-radius: 50%;
     -webkit-border-radius: 50%;
+    z-index: -1;
   }
 
   .textoInicioCircle2 {
     position: absolute;
     background-image: radial-gradient(#fb95be, #d918bf);
-    bottom: -2rem;
-    right: -80px;
-    width: 50rem;
-    height: 50rem;
+    top: 16rem;
+    left: 0rem;
+    width: 66rem;
+    height: 66rem;
+    border-radius: 50%;
+    z-index: -1;
+  }
+}
+@media (max-width: 768px) {
+  .textoInicioPrincipal {
+    grid-area: textoInicioPrincipal;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+  }
+  .textoInicioPrincipal .textoInicioDetalle {
+    background-color: #fb95be;
+    width: 1rem;
+    height: 9rem;
+    border-radius: 50px 50px 50px 50px;
+    margin-left: 7rem;
+    -webkit-border-radius: 50px 50px 50px 50px;
+    -moz-border-radius: 50px 50px 50px 50px;
+    -ms-border-radius: 50px 50px 50px 50px;
+    -o-border-radius: 50px 50px 50px 50px;
+  }
+  .textoInicioPrincipal .paddigTextoDeInicio {
+    margin-left: 2rem;
+  }
+  .textoInicioPrincipal .paddigTextoDeInicio .textoInicio {
+    font-size: 2.5rem;
+    color: #aa6cbc;
+  }
+
+  .imagenInicio {
+    height: 66rem;
+    position: relative;
+    object-fit: cover;
+    overflow: hidden;
+    align-items: flex-end;
+    z-index: -1;
+  }
+
+  .foto {
+    width: 127%;
+  }
+
+  .textoInicioCircle {
+    position: absolute;
+    background-image: radial-gradient(#fb95be, #d918bf);
+    top: 0rem;
+    left: 2rem;
+    width: 11rem;
+    height: 11rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    z-index: -1;
+  }
+
+  .textoInicioCircle2 {
+    position: absolute;
+    background-image: radial-gradient(#fb95be, #d918bf);
+    top: 0rem;
+    left: 1rem;
+    width: 85rem;
+    height: 85rem;
     border-radius: 50%;
     z-index: -1;
   }
