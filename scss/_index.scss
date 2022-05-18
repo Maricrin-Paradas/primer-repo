@@ -17,6 +17,11 @@ a:active a:hover {
   src: url("../IMG/Montserrat-Italic-VariableFont_wght.ttf");
 }
 
+.with-list-navbar {
+  width: 100%;
+  margin: 0 2rem;
+}
+
 .logoWeb {
   width: 10rem;
   margin-right: 5rem;
@@ -48,15 +53,14 @@ a:active a:hover {
 }
 
 .nav-link {
-  font-size: 2rem;
-  margin: 2rem;
+  font-size: 2.5rem;
+  padding-top: 4rem;
 }
 .navbar-nav {
   background-color: $color-container;
 }
 
 .carritoDeCompra {
-  width: 8rem;
   height: 7rem;
   margin: 2rem 4rem;
 }
