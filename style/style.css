@@ -18,7 +18,10 @@ a:active a:hover {
 }
 .with-list-navbar {
   width: 100%;
-  margin: 0 2rem;
+}
+
+.navz-index {
+  z-index: 5;
 }
 
 .logoWeb {
