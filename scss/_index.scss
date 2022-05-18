@@ -19,7 +19,7 @@ a:active a:hover {
 
 .logoWeb {
   width: 10rem;
-  margin-right: 22rem;
+  margin-right: 5rem;
 }
 
 .button {
@@ -27,8 +27,8 @@ a:active a:hover {
 }
 
 .iconos {
-  width: 45%;
-  height: 5rem;
+  max-width: 20%;
+  height: 4rem;
 }
 
 .navbar {
@@ -48,9 +48,8 @@ a:active a:hover {
 }
 
 .nav-link {
-  font-size: 3rem;
-  margin: 3.5rem;
-  display: inline-flex;
+  font-size: 2rem;
+  margin: 2rem;
 }
 .navbar-nav {
   background-color: $color-container;
@@ -63,8 +62,6 @@ a:active a:hover {
 }
 
 .textoInicioPrincipal {
-  grid-area: textoInicioPrincipal;
-  height: 20rem;
   display: flex;
   align-items: center;
   .textoInicioDetalle {
@@ -77,7 +74,7 @@ a:active a:hover {
   .paddigTextoDeInicio {
     margin-left: 2rem;
     .textoInicio {
-      font-size: 5rem;
+      font-size: 4rem;
       color: $color-texto;
     }
   }
@@ -142,6 +139,7 @@ textarea {
   margin: auto;
   display: flex;
   justify-content: space-evenly;
+
 }
 .box figure img {
   width: 15rem;
@@ -151,13 +149,13 @@ textarea {
 .textoFooter {
   color: $color-texto;
   margin-bottom: 3rem;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .textoFooter2 {
   color: $color-texto;
   margin-bottom: 1rem;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 .redSocial img {

@@ -18,7 +18,7 @@ a:active a:hover {
 }
 .logoWeb {
   width: 10rem;
-  margin-right: 22rem;
+  margin-right: 5rem;
 }
 
 .button {
@@ -26,8 +26,8 @@ a:active a:hover {
 }
 
 .iconos {
-  width: 45%;
-  height: 5rem;
+  max-width: 20%;
+  height: 4rem;
 }
 
 .navbar {
@@ -47,9 +47,8 @@ a:active a:hover {
 }
 
 .nav-link {
-  font-size: 3rem;
-  margin: 3.5rem;
-  display: inline-flex;
+  font-size: 2rem;
+  margin: 2rem;
 }
 
 .navbar-nav {
@@ -63,8 +62,6 @@ a:active a:hover {
 }
 
 .textoInicioPrincipal {
-  grid-area: textoInicioPrincipal;
-  height: 20rem;
   display: flex;
   align-items: center;
 }
@@ -79,7 +76,7 @@ a:active a:hover {
   margin-left: 2rem;
 }
 .textoInicioPrincipal .paddigTextoDeInicio .textoInicio {
-  font-size: 5rem;
+  font-size: 4rem;
   color: #aa6cbc;
 }
 
@@ -153,13 +150,13 @@ textarea {
 .textoFooter {
   color: #aa6cbc;
   margin-bottom: 3rem;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .textoFooter2 {
   color: #aa6cbc;
   margin-bottom: 1rem;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 .redSocial img {
@@ -208,13 +205,13 @@ iframe {
 }
 
 .titleNosotros {
-  font-size: 3rem;
+  font-size: 2rem;
   color: #aa6cbc;
 }
 
 .textoNosotros {
-  margin-top: 1.5rem;
-  font-size: 1.9rem;
+  margin-top: 2rem;
+  font-size: 1.5rem;
   color: #aa6cbc;
 }
 
@@ -400,10 +397,10 @@ input:focus {
   color: #aa6cbc;
 }
 .grupoNovedades .textoNovedades1 .subtitulos {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 .grupoNovedades .textoNovedades1 .informacionTexto {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 4rem;
 }
 
@@ -477,6 +474,31 @@ input:focus {
     border-radius: 50%;
     z-index: -1;
   }
+
+  .grupoFooter {
+    width: 100%;
+    max-width: 27rem;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .textoFooter {
+    color: #aa6cbc;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+  }
+
+  .textoFooter2 {
+    color: #aa6cbc;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+
+  .box figure img {
+    width: 10rem;
+    margin: 2rem;
+  }
 }
 @media (max-width: 768px) {
   .textoInicioPrincipal {
@@ -538,6 +560,31 @@ input:focus {
     height: 85rem;
     border-radius: 50%;
     z-index: -1;
+  }
+
+  .grupoFooter {
+    width: 100%;
+    max-width: 27rem;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .textoFooter {
+    color: #aa6cbc;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+  }
+
+  .textoFooter2 {
+    color: #aa6cbc;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+
+  .box figure img {
+    width: 10rem;
+    margin: 2rem;
   }
 }
 
